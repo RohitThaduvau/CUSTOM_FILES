@@ -583,6 +583,10 @@ video[poster]{
 
 }
 
+.c-button--text {
+	border-bottom: 1px solid #009CDA;
+}
+
 .c-button--outline, .st-tile-grid__links li a, .button-outline,
 .c-button--secondary-outline, .s-left-nav a, .button-secondary-outline {
 	border: 1px solid;
@@ -626,6 +630,19 @@ footer .c-button--outline {
 
     color: #fff;
 
+}
+
+.s-footer__nav a {
+	font-weight: 300;
+	letter-spacing: 0.5px;
+}
+
+.s-footer__nav a:hover {
+	color: #fff;
+}
+
+.st-global-footer__copyright {
+	font-size: 12px;
 }
 
 .st-global-footer__email-signup__form__input {
@@ -672,6 +689,15 @@ footer .c-button--outline {
 
 }
 
+@media screen and (min-width: 48em) {
+
+	.s-footer__nav a {
+		font-size: 13px;
+		padding: 10px 20px;
+	}
+
+}
+
 @media screen and (min-width: 71.25em) {
 
 	.c-banners__title {
@@ -709,6 +735,10 @@ footer .c-button--outline {
 
 	}
 
+	.s-footer__nav a {
+		font-size: 13px;
+	}
+
 }
 
 
@@ -725,7 +755,7 @@ footer .c-button--outline {
 
 		border-color: #131415; 
 
-		}
+	}
 
 	.c-navigation-global__link::after {
 
