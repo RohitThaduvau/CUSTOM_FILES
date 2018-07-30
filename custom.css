@@ -491,6 +491,7 @@ video[poster]{
 .c-banners__title {
 
 	font-style: normal;
+	font-size: 37px;
 
 }
 
@@ -605,8 +606,37 @@ video[poster]{
 	font-family: "akzidenz-grotesk-pro-condens", sans-serif;
 }
 
+.c-call-to-action-grid__heading {
+	font-weight: 600;
+	letter-spacing: 0.5px;
+}
+
+.c-call-to-action-grid--four-up .c-call-to-action-grid__heading {
+	font-size: 24px;
+}
+
 .c-recommendations__heading {
+	font-weight: 600;
+	letter-spacing: 0.5px;
 	text-transform: uppercase;
+}
+
+.c-banners__list__block img {
+	padding-bottom: 10px;
+}
+
+.custom-grid-eyebrow {
+	text-align: center;
+	font-size: 13px;
+	letter-spacing: 2px;
+}
+
+a:hover .custom-grid-eyebrow {
+	color: #131415;
+}
+
+#mini-cart .mini-cart-total .mini-cart-link .minicart-quantity {
+	background-color: #131415;
 }
 
 .st-global-footer {
@@ -635,20 +665,69 @@ footer .c-button--outline {
 .s-footer__nav a {
 	font-weight: 300;
 	letter-spacing: 0.5px;
+	text-transform: uppercase;
 }
 
 .s-footer__nav a:hover {
 	color: #fff;
 }
 
-.st-global-footer__copyright {
-	font-size: 12px;
+.s-footer__social a {
+	color: #131415;
+}
+
+.s-footer__social a:hover {
+	color: #424242;
 }
 
 .st-global-footer__email-signup__form__input {
 
     background-color:#f5f5f5;
 
+}
+
+/* custom-model-css*/
+.modal-dialog-custom {
+    display: none;
+    position: relative; 
+    z-index: 1;
+	height: 100%;
+	width: 100%;
+    overflow: auto;
+}
+
+.modal-custom-popup {
+	position: absolute;
+	padding-left: 5px;
+	margin-top: -4px;
+}
+
+.modal-custom-close {
+	position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 30px;
+    height: 30px;
+    display: block;
+    cursor: pointer;
+}
+
+.modal-custom-close::before,
+.modal-custom-close::after {
+	content: "";
+    width: 100%;
+    height: 1px;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    background: #000;
+    display: block;
+    position: absolute;
+    top: 50%;
+}
+
+.modal-custom-close::before {
+	-webkit-transform: rotate(45deg);
+    transform: rotate(45deg);	
 }
 
 @media screen and (min-width: 1280px) { /*desktop menu breakpoint*/
@@ -696,15 +775,13 @@ footer .c-button--outline {
 		padding: 10px 20px;
 	}
 
+	.c-call-to-action-grid__logo {
+		margin-bottom: 20px;
+	}
+
 }
 
-@media screen and (min-width: 71.25em) {
-
-	.c-banners__title {
-
-		font-size: 37px; 
-
-	} 
+@media screen and (min-width: 71.25em) { 
 
 	.c-navigation-global__link { 
 
@@ -721,6 +798,14 @@ footer .c-button--outline {
 	.c-call-to-action-grid__heading {
 		font-size: 30px;
 		letter-spacing: 0.5px;
+	}
+
+	.c-call-to-action-grid--four-up .c-call-to-action-grid__heading {
+		font-size: 28px;
+	}
+
+	.c-banners__header-block .c-banners__title {
+		font-size: 63px;
 	}
 
 	.c-megamenu__sublevel:nth-last-child(1) {
