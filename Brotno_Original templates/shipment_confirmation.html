@@ -1,0 +1,156 @@
+<div>&nbsp;</div>
+<table style="width: 100%;" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td align="center" style="background: #fff; padding: 10px 0;"><center>
+<table style="background: #ffffff; border-top: 1px solid #009CDA; border-spacing: 0; padding: 0 30px 15px; min-width: 596px;">
+<tbody>
+<tr>
+<td><img alt="Bauer Hockey" src="http://s224648.gridserver.com/assets/images/bauer-logo.svg" height="31" width="250" style="margin-top: 30px;" /></td>
+</tr>
+<tr>
+<td style="font-family: Helvetica, Arial, sans-serif; font-size: 13px; padding: 30px 0px; vertical-align: top;">
+<h1 style="font-size: 40px; font-family: Helvetica, Arial, sans-serif; font-weight: normal;">SHIPMENT CONFIRMATION</h1>
+<p style="padding: 0px;">Your Bauer.com order has shipped! Please find your tracking number(s) for order number %%#orderNumber%% below:<br /><br /> {dynamic_code} {loop} <a style="text-decoration: none; border: none; color: #009CDA;" href="%%#trackingUrl_#%%">%%#track#%%</a><br /> {/loop} {/dynamic_code}</p>
+<p style="padding: 0px;">We are committed to delivering value to our customers through exceptional product and service, and appreciate your feedback. If you have questions or issues, let us know. We'll fix it.</p>
+<div style="padding: 0; font-family: Helvetica, Arial, sans-serif; font-size: 21px; font-weight: normal; text-transform: uppercase;">Customer Service</div>
+<div style="padding: 15px 0 0;"><a style="text-decoration: none; border: none; color: #009CDA;" href="tel:8338979942">1 (833 )897-9942</a></div>
+<div style="padding: 5px 0 0;">M-F 8am-5pm MST</div>
+<div style="padding: 5px 0 0;">Closed Saturday and Sunday</div>
+<div style="padding: 5px 0 0;"><a style="color: #009CDA; text-decoration: none;" href="mailto:CustomerService@Bauer.com">CustomerService@Bauer.com</a></div>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<table style="background: #ffffff; border: 0; width: 100%; border-spacing: 0;">
+<tbody>
+<tr>
+<td style="font-size: 13px; font-family: Helvetica, Arial, sans-serif; vertical-align: top; text-transform: uppercase; letter-spacing: 1px;">Order Placed: %%#orderDate%%</td>
+<td style="font-size: 13px; font-family: Helvetica, Arial, sans-serif; vertical-align: top; text-transform: uppercase; letter-spacing: 1px; text-align: right;">Order Confirmation #: %%#orderNo%%</td>
+</tr>
+</tbody>
+</table>
+<table style="background: #ffffff; border: none; width: 100%; border-spacing: 0; margin-top: 25px;">
+<tbody>
+<tr><th colspan="3" style="text-align: left; border-top: 1px solid black;">
+<h2 style="font-size: 28px; font-family: Helvetica, Arial, sans-serif; font-weight: normal; padding-top: 10px;">ORDER SUMMARY</h2>
+</th></tr>
+<tr>
+<td style="font-size: 13px; font-family: Helvetica, Arial, sans-serif; padding: 23px 10px 0 0; vertical-align: top;">
+<h3 style="margin: 0; padding: 0 0 15px; display: inline-block; font-family: Helvetica, Arial, sans-serif; font-size: 21px; font-weight: normal; text-transform: uppercase;">Shipping Address</h3>
+<div>
+<div class="summarybox">
+<div class="name">
+<div class="name">%%#shipto_fullName%%</div>
+<div class="street">
+<div class="line1">%%#shipto_address1%%</div>
+</div>
+<!-- END:street -->
+<div class="location">
+<div class="city">%%#shipto_city%%</div>
+<div class="state">%%#shipto_stateCode%%</div>
+<div class="zip">%%#shipto_postalCode%%</div>
+</div>
+<!-- END:location -->
+<div style="padding-bottom: 9px;" class="country">%%#shipto_countryCode%%</div>
+</div>
+<!-- END:name --></div>
+<!-- END:summarybox --></div>
+<div>Method: %%#shipMethod%%</div>
+<div>Shipping Status: %%#shipStatus%%</div>
+<div style="margin-top: 20px;">
+<h3 style="margin: 0; padding: 0 0 15px; display: inline-block; font-family: Helvetica, Arial, sans-serif; font-size: 21px; font-weight: normal; text-transform: uppercase;">Billing Address</h3>
+<div class="mini-address-name">%%#billto_fullName%%</div>
+<div class="mini-address-location">
+<div class="street">
+<div class="line1">%%#billto_address1%%</div>
+</div>
+<!-- END:street -->
+<div class="location">
+<div class="city">%%#billto_city%%</div>
+<div class="state">%%#billto_stateCode%%</div>
+<div class="zip">%%#billto_postalCode%%</div>
+</div>
+<!-- END:location -->
+<div class="country">%%#billto_countryCode%%</div>
+<div class="phone"><a style="text-decoration: none; border: none; color: #000000;">%%#billto_phone%%</a></div>
+</div>
+</div>
+</td>
+<td style="font-size: 13px; font-family: Helvetica, Arial, sans-serif; padding: 23px 0; vertical-align: top;">{dynamic_code} {loop}
+<h3 style="margin: 0; padding: 0 0 15px; display: inline-block; font-family: Helvetica, Arial, sans-serif; font-size: 21px; font-weight: normal; text-transform: uppercase;">Payment Method</h3>
+<div>%%#payDataString_#%%</div>
+<div style="padding-bottom: 9px;">Amount: %%#payAmount_#%%</div>
+<br /> {/loop} {/dynamic_code}
+<div style="margin-top: 20px;">
+<h3 style="margin: 0; padding: 0 0 15px; display: inline-block; font-family: Helvetica, Arial, sans-serif; font-size: 21px; font-weight: normal; text-transform: uppercase;">Payment Total</h3>
+<table>
+<tbody>
+<tr>
+<td style="font-size: 13px; font-family: Helvetica, Arial, sans-serif; padding: 2px 0; vertical-align: top;">Subtotal</td>
+<td style="font-size: 13px; font-family: Helvetica, Arial, sans-serif; padding: 2px 0; vertical-align: top;">%%#orderSubtotal%%</td>
+</tr>
+<tr>
+<td style="font-size: 13px; font-family: Helvetica, Arial, sans-serif; padding: 2px 0; vertical-align: top;">Shipping</td>
+<td style="font-size: 13px; font-family: Helvetica, Arial, sans-serif; padding: 2px 0; vertical-align: top;">%%#shippingTotal%%</td>
+</tr>
+<tr>
+<td style="font-size: 13px; font-family: Helvetica, Arial, sans-serif; padding: 2px 0; vertical-align: top; color: #009CDA;">Discount</td>
+<td style="font-size: 13px; font-family: Helvetica, Arial, sans-serif; padding: 2px 0; vertical-align: top; color: #009CDA;">- %%#orderDiscWithShip%%</td>
+</tr>
+<tr>
+<td style="font-size: 13px; font-family: Helvetica, Arial, sans-serif; padding: 2px 0; vertical-align: top;">Sales Tax</td>
+<td style="font-size: 13px; font-family: Helvetica, Arial, sans-serif; padding: 2px 0; vertical-align: top;">%%#totalTax%%</td>
+</tr>
+<tr>
+<td style="vertical-align: top; padding: 26px 14px 0 0;">
+<div style="margin: 0; padding: 0 0 15px; display: inline-block; font-family: Helvetica, Arial, sans-serif; font-size: 21px; font-weight: normal; text-transform: uppercase;">Total</div>
+</td>
+<td style="vertical-align: top; padding: 26px 0;">
+<div style="margin: 0; padding: 0 0 15px; display: inline-block; font-family: Helvetica, Arial, sans-serif; font-size: 21px; font-weight: normal; text-transform: uppercase;">%%#orderTotal%%</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+{dynamic_code} {loop}{/loop} {/dynamic_code}
+<table style="background: #ffffff; border: none; width: 100%; border-spacing: 0; margin-top: 50px;">
+<thead>
+<tr><th colspan="3" style="text-align: left; border-top: 1px solid black;">
+<h2 style="font-size: 30px; font-family: Helvetica, Arial, sans-serif; font-weight: normal; padding: 10px 0 20px;">SHIPMENT</h2>
+</th></tr>
+</thead>
+<tbody>
+<tr>
+<td style="font-family: Helvetica, Arial, sans-serif; font-size: 21px; font-weight: normal; text-transform: uppercase;">Product</td>
+<td style="font-family: Helvetica, Arial, sans-serif; font-size: 21px; font-weight: normal; text-transform: uppercase;">Quantity</td>
+<td style="font-family: Helvetica, Arial, sans-serif; font-size: 21px; font-weight: normal; text-transform: uppercase;">Price</td>
+</tr>
+<tr><!-- PRODUCT -->
+<td style="font-size: 13px; font-family: Helvetica, Arial, sans-serif; padding: 20px 10px 0 0; vertical-align: top;">
+<div style="float: left; margin: 0 10px 0 0;" class="product-image"><img src="%%#productImgUrl_#%%" /></div>
+<div style="float: left; margin: 10px 0 0 0;" class="product-list-item">
+<div class="name"><a style="color: #009CDA; text-decoration: none;" title="%%#productName_#%%" href="%%#productUrl_#%%">%%#productName_#%%</a></div>
+<div class="sku"><span xml="lang">%%#productId_#%%</span></div>
+<div class="attribute"><span xml="lang">%%#productVars_#%%</span></div>
+</div>
+<!-- END:product-list-item --></td>
+<!-- Quantity -->
+<td style="font-size: 13px; font-family: Helvetica, Arial, sans-serif; padding: 20px 10px 0 0; vertical-align: top;">%%#quantityOrdered_#%%</td>
+<!-- Total -->
+<td style="font-size: 13px; font-family: Helvetica, Arial, sans-serif; padding: 20px 0 0 0; vertical-align: top;">%%#productAdjPrice_#%%</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</center></td>
+</tr>
+</tbody>
+</table>
