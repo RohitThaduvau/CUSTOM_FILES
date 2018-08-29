@@ -1,5 +1,7 @@
 <link rel="stylesheet" type="text/css" href="https://staging-na01-peakachievementathletics.demandware.net/on/demandware.static/Sites-Bauer-Site/-/en_US/v1533842635111/css/style.css" />
 <link rel="stylesheet" type="text/css" href="./custom.css" />
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+  crossorigin="anonymous"></script>
 <style>
     .shipment__tracking {
         height: 100%;
@@ -84,8 +86,6 @@
         </div>
     </div>
 </div>
-<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
-  crossorigin="anonymous"></script>
 <script>
     $('.tracking-feild').keyup(function(event) {
         var image_source = "";
@@ -94,14 +94,16 @@
         if (provider == 4) {
             image_source = "https://i1.adis.ws/i/bauer/fedex_logo";
             alt_text = "FedEx Logo";
+            $('.provider-logo').show();
         }else if(provider == 6) {
             image_source = "https://www.purolator.com/assets/img/logo-purolator.gif";
             alt_text = "Purolator Inc.";
+            $('.provider-logo').show();
+        }else {
+            $('.provider-logo').hide();
         }
         $('.provider-logo').attr('src', image_source);
         $('.provider-logo').attr('alt', alt_text);
-        $('.provider-logo').show();
-        
     });
     jQuery('#form-track-shipment').submit(function(e) {
         e.preventDefault();

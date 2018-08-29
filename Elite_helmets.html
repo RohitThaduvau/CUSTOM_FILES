@@ -58,12 +58,31 @@
     .blue .c-call-to-action-grid__body {
         color: #fff;
     }
+    .c-banners__list__image.desktop {
+        display: none;
+    }
+    .c-banners__list__image.mobile {
+        display: block;
+    }   
+    /* @media screen and (min-width: 992px) {
+        .c-banners__list__image.desktop {
+            display: block;
+        }
+        .c-banners__list__image.mobile {
+            display: none;
+        }
+    } */
     @media screen and (min-width: 1140px) {
         .c-banners.c-banners--marketing {
             max-height: 800px;
+        }
+        .c-banners__list__image.desktop {
+            display: block;
+        }
+        .c-banners__list__image.mobile {
+            display: none;
         } 
-    }   
-
+    } 
 </style>
 <div class="  st-amplience-component">
             <div class="c-banners c-banners--marketing header-block" id="asset-499293b96de6-4080-a04f-02611202ff52">
@@ -116,10 +135,14 @@
             </div>
             <div class="c-banners c-banners--marketing white" id="asset-76e39d54a2e8-429a-908d-a4e895b198e8">
                 <div class="c-banners__image-block">
-                        <img class="c-banners__list__image"
+                        <img class="c-banners__list__image desktop"
                             src="https://i1.adis.ws/i/bauer/Reakt-200-banner-image"
                             
                              />
+                        <img class="c-banners__list__image mobile"
+                        src="https://i1.adis.ws/i/bauer/Reakt-200-banner-image-mobile"
+                        
+                        />
                 </div>
             
                 <style>
@@ -190,10 +213,14 @@
             </div>
             <div class="c-banners c-banners--marketing blue" id="asset-8ea14605b626-4160-bcc8-9e6f58577190">
                     <div class="c-banners__image-block">
-                        <img class="c-banners__list__image"
+                        <img class="c-banners__list__image desktop"
                                 src="https://i1.adis.ws/i/bauer/Reakt-banner-image"
                                 
                                  />
+                        <img class="c-banners__list__image mobile"
+                        src="https://i1.adis.ws/i/bauer/Reakt-banner-image-mobile"
+                        
+                        />
                     </div>
                 
                     <style>
@@ -265,10 +292,14 @@
             </div>
             <div class="c-banners c-banners--marketing white" id="asset-30cb997e0340-46f8-9b1a-35f417c7c8f2">
                 <div class="c-banners__image-block">
-                    <img class="c-banners__list__image"
+                    <img class="c-banners__list__image desktop"
                     src="https://i1.adis.ws/i/bauer/Reakt-95-banner-image"
                     
                      />
+                     <img class="c-banners__list__image mobile"
+                    src="https://i1.adis.ws/i/bauer/Reakt-95-banner-image-mobile"
+                    
+                    />
                 </div>
             
                 <style>
@@ -341,10 +372,14 @@
             </div>
             <div class="c-banners c-banners--marketing blue" id="asset-b19864108dd4-442d-97a5-5d396155e337">
                 <div class="c-banners__image-block">
-                    <img class="c-banners__list__image"
+                    <img class="c-banners__list__image desktop"
                         src="https://i1.adis.ws/i/bauer/Reakt-75-banner-image"
                         
                             />
+                    <img class="c-banners__list__image mobile"
+                    src="https://i1.adis.ws/i/bauer/Reakt-75-banner-image-mobile"
+                    
+                    />
                 </div>
         
             <style>
