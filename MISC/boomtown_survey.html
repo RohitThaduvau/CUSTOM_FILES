@@ -1,0 +1,93 @@
+<style>
+    body{
+    font-family: roboto, sans-serif;
+    }
+    .form_table {
+        width: 100%;
+        border: none;
+        color: #000;
+    }
+    .full_width_space {
+        max-width: 650px;
+        margin: 0 auto;
+        line-height: 24px;
+        font-size: 14px;
+    }
+    .q {
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+        max-width: 350px;
+    }
+    #q60 {
+        margin-top: -35px;
+    }
+    .q.full_width {
+        max-width: 100%;
+    }
+    .q .question {
+        letter-spacing: 2.8px;
+        font-weight: normal;
+    }
+    .q .segment_header h1 {
+        letter-spacing: 2.8px;
+    }
+    .highlight {
+        background: none !important;
+    }
+    .q.highlight .text_field {
+        border: 1px solid #000;
+    }
+    .q .text_field {
+        width: 100%;
+        width: -webkit-fill-available;
+        border: 1px solid #000;
+        min-height: 40px;
+        letter-spacing: 2.8px;
+    }
+    .q .text_field:focus {
+        border: 1px solid #FFDD00;
+    }
+    .q .matrix th {
+        font-size: 10px;
+        font-weight: normal;
+    }
+    table.matrix {
+        min-width: 350px;
+        max-width: 350px;
+    }
+    .matrix .matrix_row_light td.question{
+        display: none;
+    }
+    .outside_container .submit_button {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        color: #000 !important;
+        letter-spacing: 2.8px;
+        background: #fff;
+        border: 1px solid #000;
+        min-width: 200px;
+    }
+    .outside_container .submit_button:hover, 
+    .outside_container .submit_button:focus {
+        background: #fff;
+    }
+    .outside_container {
+        background: #FFDD00;
+    }
+     @media screen and (max-width: 768px) {
+        .q{
+            max-width: 100%;
+        }
+     }    
+
+</style>
+
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+  crossorigin="anonymous"></script>
+<script>
+    $( document ).ready(function() {
+        $('#q27').parent().css('background-color', '#FFDD00');
+        $('table.matrix tbody tr th:first-child').css('display','none');
+    });
+</script>

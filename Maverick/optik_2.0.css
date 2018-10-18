@@ -1,0 +1,109 @@
+body {
+    height: auto !important;
+}
+.nm-row {
+    padding: 0;
+}
+body.home .nm-row .nm-row.nm-row-full:not(.inner), 
+.nm-row .nm-row.nm-row-full.intro, 
+.nm-row .nm-row.nm-row-full.breadcrumbs, 
+.nm-row .nm-shop-products-col,
+.nm-row .nm-row.nm-row-full:not(.inner){
+    padding: 0;
+}
+[class*="col-sm"] {
+    padding: 0;
+}
+.nm_column {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.nm-single-product-bg {
+    max-width: 100%;
+}
+.woocommerce-tabs .nm-row {
+    max-width: 100%;
+}
+.single-product .woocommerce-Tabs-panel--description .nm-row-full {
+    border-bottom: 0;
+}
+.single-product .nm_column {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.pdp_tech_image img{
+    max-width: 90%;
+    width: auto;
+}
+.pdp_tech_image_vertical img{
+    max-width: 220px;
+    margin: 0 auto;
+}
+.pdp_tech_content .hawk {
+    font-weight: 100;
+    padding-top: 15px;
+}
+.pdp_tech_content h1 {
+    font-size: 28px;
+    font-weight: 100;
+    letter-spacing: 2px;
+    padding: 5px 0 10px;
+}
+.pdp_tech_content p {
+    max-width: 450px;
+    letter-spacing: 2px;
+}
+.pdp_flex_box {
+    display: flex;
+}
+
+@media (min-width: 768px) {
+    .pdp_content_left {
+        padding-left: 5%;
+    }
+    .dark_block_copy {
+        color: #fff;
+    }
+    .pdp_specs_dark {
+        background-color: #323232;
+    }
+    .pdp_specs_light {
+        background-color: #F3F3F3;
+    }
+    .pdp_specs_dark .pdp_tech_content p {
+        color: #fff;
+    }
+}
+    
+@media (min-width: 1240px) {
+   .pdp_content_left {
+       padding-left: 10%;
+   }
+}
+
+@media (max-width: 767px) {
+    .pdp_tech_content {
+        padding-left: 10%;
+        margin-right: 10%;
+    }
+    .pdp_tech_image_vertical img {
+        max-width: 120px;
+    }
+    .flex_image_first {
+        order: -1;
+    }
+    .pdp_specs_dark .flex_image_first{
+        background-color: #323232;
+    }
+    .pdp_specs_light .pdp_tech_image {
+        background-color: #F3F3F3;
+    }
+    .pdp_specs_dark .pdp_tech_content {
+        background-color: #fff;
+    }
+    .pdp_specs_dark .pdp_tech_content h1,
+    .pdp_specs_dark .pdp_tech_content h2,
+    .pdp_specs_dark .pdp_tech_content p {
+        color: #000 !important;
+    }
+}

@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TrackReply xmlns="http://fedex.com/ws/track/v14">
+<HighestSeverity>SUCCESS</HighestSeverity>
+<Notifications>
+<Severity>SUCCESS</Severity>
+<Source>trck</Source>
+<Code>0</Code>
+<Message>Request was successfully processed.</Message>
+<LocalizedMessage>Request was successfully processed.</LocalizedMessage>
+</Notifications>
+<Version>
+<ServiceId>trck</ServiceId>
+<Major>14</Major>
+<Intermediate>0</Intermediate>
+<Minor>0</Minor>
+</Version>
+<CompletedTrackDetails>
+<HighestSeverity>SUCCESS</HighestSeverity>
+<Notifications>
+<Severity>SUCCESS</Severity>
+<Source>trck</Source>
+<Code>0</Code>
+<Message>Request was successfully processed.</Message>
+<LocalizedMessage>Request was successfully processed.</LocalizedMessage>
+</Notifications>
+<DuplicateWaybill>false</DuplicateWaybill>
+<MoreData>false</MoreData>
+<TrackDetailsCount>0</TrackDetailsCount>
+<TrackDetails>
+<Notification>
+<Severity>SUCCESS</Severity>
+<Source>trck</Source>
+<Code>0</Code>
+<Message>Request was successfully processed.</Message>
+<LocalizedMessage>Request was successfully processed.</LocalizedMessage>
+</Notification>
+<TrackingNumber>771968929603</TrackingNumber>
+<TrackingNumberUniqueIdentifier>12018~771968929603~FDEG</TrackingNumberUniqueIdentifier>
+<StatusDetail>
+<CreationTime>2018-04-13T00:00:00</CreationTime>
+<Code>DL</Code>
+<Description>Delivered</Description>
+<Location>
+<City>Atlanta</City>
+<StateOrProvinceCode>GA</StateOrProvinceCode>
+<CountryCode>US</CountryCode>
+<CountryName>United States</CountryName>
+<Residential>false</Residential>
+</Location>
+</StatusDetail>
+<CarrierCode>FDXG</CarrierCode>
+<OperatingCompanyOrCarrierDescription>FedEx Ground</OperatingCompanyOrCarrierDescription>
+<OtherIdentifiers>
+<PackageIdentifier>
+<Type>CUSTOMER_REFERENCE</Type>
+<Value>HIX - VERMILLION, OH</Value>
+</PackageIdentifier>
+</OtherIdentifiers>
+<OtherIdentifiers>
+<PackageIdentifier>
+<Type>PURCHASE_ORDER</Type>
+<Value>(GMC) SAMPLE</Value>
+</PackageIdentifier>
+</OtherIdentifiers>
+<Service>
+<Type>FEDEX_GROUND</Type>
+<Description>FedEx Ground</Description>
+<ShortDescription>FG</ShortDescription>
+</Service>
+<PackageWeight>
+<Units>LB</Units>
+<Value>1.0</Value>
+</PackageWeight>
+<PackageDimensions>
+<Length>5</Length>
+<Width>5</Width>
+<Height>5</Height>
+<Units>IN</Units>
+</PackageDimensions>
+<Packaging>Package</Packaging>
+<PackagingType>YOUR_PACKAGING</PackagingType>
+<PhysicalPackagingType>PACKAGE</PhysicalPackagingType>
+<PackageSequenceNumber>1</PackageSequenceNumber>
+<PackageCount>1</PackageCount>
+<Payments>
+<Classification>TRANSPORTATION</Classification>
+<Type>SHIPPER_ACCOUNT</Type>
+<Description>Shipper</Description>
+</Payments>
+<ShipperAddress>
+<City>ZELIENOPLE</City>
+<StateOrProvinceCode>PA</StateOrProvinceCode>
+<CountryCode>US</CountryCode>
+<CountryName>United States</CountryName>
+<Residential>false</Residential>
+</ShipperAddress>
+<OriginLocationAddress>
+<City>ZELIENOPLE</City>
+<StateOrProvinceCode>PA</StateOrProvinceCode>
+<CountryCode>US</CountryCode>
+<CountryName>United States</CountryName>
+<Residential>false</Residential>
+</OriginLocationAddress>
+<DatesOrTimes>
+<Type>ACTUAL_DELIVERY</Type>
+<DateOrTimestamp>2018-04-13T08:45:20-04:00</DateOrTimestamp>
+</DatesOrTimes>
+<DatesOrTimes>
+<Type>ACTUAL_PICKUP</Type>
+<DateOrTimestamp>2018-04-11T00:00:00</DateOrTimestamp>
+</DatesOrTimes>
+<DatesOrTimes>
+<Type>SHIP</Type>
+<DateOrTimestamp>2018-04-11T00:00:00</DateOrTimestamp>
+</DatesOrTimes>
+<DatesOrTimes>
+<Type>ACTUAL_TENDER</Type>
+<DateOrTimestamp>2018-04-11T00:00:00</DateOrTimestamp>
+</DatesOrTimes>
+<DatesOrTimes>
+<Type>ANTICIPATED_TENDER</Type>
+<DateOrTimestamp>2018-04-11T00:00:00</DateOrTimestamp>
+</DatesOrTimes>
+<DestinationAddress>
+<City>ATLANTA</City>
+<StateOrProvinceCode>GA</StateOrProvinceCode>
+<CountryCode>US</CountryCode>
+<CountryName>United States</CountryName>
+<Residential>false</Residential>
+</DestinationAddress>
+<ActualDeliveryAddress>
+<City>Atlanta</City>
+<StateOrProvinceCode>GA</StateOrProvinceCode>
+<CountryCode>US</CountryCode>
+<CountryName>United States</CountryName>
+<Residential>false</Residential>
+</ActualDeliveryAddress>
+<DeliveryAttempts>0</DeliveryAttempts>
+<DeliverySignatureName>JDENSON</DeliverySignatureName>
+<TotalUniqueAddressCountInConsolidation>0</TotalUniqueAddressCountInConsolidation>
+<AvailableImages>
+<Type>SIGNATURE_PROOF_OF_DELIVERY</Type>
+</AvailableImages>
+<NotificationEventsAvailable>ON_DELIVERY</NotificationEventsAvailable>
+<DeliveryOptionEligibilityDetails>
+<Option>INDIRECT_SIGNATURE_RELEASE</Option>
+<Eligibility>INELIGIBLE</Eligibility>
+</DeliveryOptionEligibilityDetails>
+<DeliveryOptionEligibilityDetails>
+<Option>REDIRECT_TO_HOLD_AT_LOCATION</Option>
+<Eligibility>INELIGIBLE</Eligibility>
+</DeliveryOptionEligibilityDetails>
+<DeliveryOptionEligibilityDetails>
+<Option>REROUTE</Option>
+<Eligibility>INELIGIBLE</Eligibility>
+</DeliveryOptionEligibilityDetails>
+<DeliveryOptionEligibilityDetails>
+<Option>RESCHEDULE</Option>
+<Eligibility>INELIGIBLE</Eligibility>
+</DeliveryOptionEligibilityDetails>
+<Events>
+<Timestamp>2018-04-13T08:45:20-04:00</Timestamp>
+<EventType>DL</EventType>
+<EventDescription>Delivered</EventDescription>
+<Address>
+<City>Atlanta</City>
+<StateOrProvinceCode>GA</StateOrProvinceCode>
+<PostalCode>30345</PostalCode>
+<CountryCode>US</CountryCode>
+<CountryName>United States</CountryName>
+<Residential>false</Residential>
+</Address>
+<ArrivalLocation>DELIVERY_LOCATION</ArrivalLocation>
+</Events>
+</TrackDetails>
+</CompletedTrackDetails>
+</TrackReply>

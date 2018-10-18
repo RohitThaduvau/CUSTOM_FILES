@@ -751,6 +751,36 @@ video[poster]{
 	padding: 12px 20px 13px;
 
 }
+.usericon {
+	padding: 0 10px;
+	height: 12px;
+}
+.chaticon {
+	height: 14px;
+	margin-top: -3px;
+}
+.st-global-header__top-bar__wrapper {
+	display: flex;
+	justify-content: center;
+	min-height: 28px;
+}
+.header-promotion {
+	text-transform: uppercase;
+}
+.header-promotion span {
+	font-weight: 500;
+}
+.header-promotion img {
+	padding-right: 10px;
+	vertical-align: sub;
+}
+.s-live-chat a {
+	background-color: inherit;	
+}
+.s-live-chat a::before {
+	content: url(https://bauer.a.bigcontent.io/v1/static/icon-chat);
+}
+
 
 .c-navigation-global__link--mobile,
 .c-megamenu .content-asset>ul>li>a,
@@ -758,6 +788,14 @@ video[poster]{
 .c-country-currency-dropdown__selected,
 .s-utility-navigation ul>li>a {
 	padding: 12px 20px 13px;
+}
+
+#nav-store-locator {
+	display: none;
+}
+img.mini-cart-icon {
+	top: 15px;
+	position: relative;
 }
 
 .st-global-header__wrapper {
@@ -821,6 +859,13 @@ video[poster]{
 	box-shadow: none;
 }
 
+#dwfrm_singleshipping_shippingAddress_addressFields_country-js-error {
+	background-color: #f5f5f5;
+    margin-top: 10px;
+    text-align: center;
+    padding: 10px;
+}
+
 .c-call-to-action-grid__heading,
 .c-recommendations__heading {
 	font-family: "akzidenz-grotesk-pro-condens", sans-serif;
@@ -857,6 +902,9 @@ a:hover .custom-grid-eyebrow {
 
 #mini-cart .mini-cart-total .mini-cart-link .minicart-quantity {
 	background-color: #131415;
+	border-radius: 50%;
+	padding: 0 6px;
+	z-index: 2;
 }
 
 .st-global-footer {
@@ -920,6 +968,11 @@ footer .c-button--outline {
 	position: absolute;
 	padding-left: 5px;
 	margin-top: -4px;
+	cursor: pointer;
+}
+
+img.ruler-icon {
+	vertical-align: sub;
 }
 
 .modal-custom-close, 
@@ -955,7 +1008,7 @@ footer .c-button--outline {
 	position: relative;
     width: 100%;
 	height: 100%;
-	padding-top: 60%;
+	padding-top: 50%;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -966,7 +1019,7 @@ footer .c-button--outline {
 	position: relative;
     width: 100%;
 	height: 100%;
-	padding-top: 50%;
+	padding-top: 60%;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -1111,6 +1164,13 @@ footer .c-button--outline {
 	text-transform: uppercase;
 	font-weight: bold;
 }
+.customer-service-secondary .links-highlighted {
+	background-color: #429BD5;
+	color: #fff;
+}
+.customer-service-secondary .links-highlighted a{
+	color: #fff;
+}
 
  @media screen and (min-width: 1280px) {
 	#push-nav-find-store {
@@ -1124,7 +1184,22 @@ footer .c-button--outline {
 	}
  }
 
- @media screen and (max-width: 600px) {
+ @media screen and (max-width: 576px) {
+	video[poster]{
+		min-height: 400px;
+		object-fit: cover; 
+		object-position: center; 
+	} 
+	.st-global-header__top-bar {
+		padding-top: 5px;
+		padding-bottom: 5px;
+	}
+	.st-global-header__top-bar__wrapper {
+		min-height: 34px;
+	}
+	.header-promotion img{
+		display: none;
+	}
 	#push-nav-find-store .c-icon-location-blue{
 		height: 45px;
 		width: 20px;
@@ -1327,6 +1402,46 @@ footer .c-button--outline {
 		display: block;
 		padding-bottom: 15px;
 	}
+	#nav-store-locator {
+		display: block;
+        align-self: center; 
+        padding-left: 20px;
+        padding-right: 5px;
+   }
+   .st-global-header__cart-search-wrapper__search,
+   #nav-store-locator {
+       font-family: "akzidenz-grotesk-pro-condens", sans-serif;
+       color: #131415;
+	   font-size: 16px;
+	   letter-spacing: 0.8px;
+       text-transform: uppercase;
+   }
+   #nav-store-locator a:hover,
+   .st-global-header__cart-search-wrapper a:hover{
+	   color: #009CDA;
+   }
+   .st-global-header__cart-search-wrapper__search svg {
+       height: 20px;
+       width: 20px;
+	   margin-top: -6px;
+	   color: #009CDA;
+   }
+   #nav-store-locator span {
+       padding-left: 3px;
+   }
+   #nav-store-locator img {
+       top: 2px;
+	   position: relative;
+	   width: 13px;
+	   height: 17px;
+   }
+   img.mini-cart-icon {
+       top: 10px;
+       position: relative;
+   }
+   .st-global-header__utility-navigation li:nth-child(3) {
+	   display: none;
+   }
 
 	.st-global-header__site-preferences {
 		top: -33px;

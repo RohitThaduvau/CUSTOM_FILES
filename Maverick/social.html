@@ -1,0 +1,128 @@
+<html>
+    <style>
+        /* * {
+        margin: 0;
+        padding: 0;
+        }
+        *,
+        *::before,
+        *::after {
+            box-sizing: inherit;
+        }
+        html {
+            box-sizing: border-box;
+        } */
+        .social__grid-men img,
+        .social__grid-men video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .social__grid-men video {
+            object-fit: scale-down;
+        }
+        .social__grid-men {
+            display: -ms-grid;
+            display: grid;
+            -ms-grid-columns: 1fr 1fr 1fr;
+            grid-template-columns: repeat(3 , 1fr);
+            -ms-grid-rows: 15vw 15vw 15vw;
+            grid-template-rows: repeat(3, 15vw);
+            grid-gap: 4px;
+        }
+        .social__grid-item-1 {
+            -ms-grid-row: 1;
+            -ms-grid-row-span: 2;
+            grid-row: 1/span 2;
+            -ms-grid-column: 1;
+            -ms-grid-column-span: 2;
+            grid-column: 1/span 2;
+        }
+        .social__grid-item-2 {
+            -ms-grid-row: 1;
+            -ms-grid-row-span: 1;
+            grid-row: 1/span 1;
+            -ms-grid-column: 3;
+            -ms-grid-column-span: 1;
+            grid-column: 3/span 1;
+        }
+        .social__grid-item-3 {
+            -ms-grid-row: 2;
+            -ms-grid-row-span: 1;
+            grid-row: 2/span 1;
+            -ms-grid-column: 3;
+            -ms-grid-column-span: 1;
+            grid-column: 3/span 1;
+        }
+        .social__grid-item-4 {
+            -ms-grid-row: 3;
+            -ms-grid-row-span: 1;
+            grid-row: 3/span 1;
+            -ms-grid-column: 1;
+            -ms-grid-column-span: 1;
+            grid-column: 1/span 1;
+        }
+        .social__grid-item-5 {
+            -ms-grid-row: 3;
+            -ms-grid-row-span: 1;
+            grid-row: 3/span 1;
+            -ms-grid-column: 2;
+            -ms-grid-column-span: 1;
+            grid-column: 2/span 1;
+        }
+        .social__grid-item-6 {
+            -ms-grid-row: 3;
+            -ms-grid-row-span: 1;
+            grid-row: 3/span 1;
+            -ms-grid-column: 3;
+            -ms-grid-column-span: 1;
+            grid-column: 3/span 1;
+        }
+        .social-header {
+            font-size: 25px;
+            color: #c8102e;
+            padding: 40px 10px 15px;
+            font-weight: 100;
+        }
+        @media (min-width: 768px) {
+            .social__grid-men {
+                padding-right: 2px;
+            }
+        }
+        @media (max-width: 767px) {
+            .social__grid-men {
+                -ms-grid-rows: 30vw 30vw 30vw;
+                grid-template-rows: repeat(3, 30vw);
+            }
+            .social-header {
+                font-size: 20px;
+                padding: 0px;
+            }
+        }
+    </style>
+    <body>
+        <h1 class="social-header"><a href="https://instagram.com/maveriklacrosse" target="_blank">@MAVERIKLACROSSE</a></h1>
+        <div class="social__grid-men">
+            <div class="social__grid-item social__grid-item-1">
+                <video id="mens_social_video" controls poster="https://i1.adis.ws/i/bauer/Mens-Social-Video-Image@3x">
+                    <source src="https://s1.adis.ws/bauer/_vid/mens-social-video/7dd427b1-0f57-47dd-8700-942edaa37660/video/de12e347-0dcb-402d-8b8c-bbdb98315faf.mp4" type="video/mp4">
+                </video>
+            </div>
+            <figure class="social__grid-item social__grid-item-2">
+                <img src="https://i1.adis.ws/i/bauer/Mav-Social-1@3x" alt="">
+            </figure>
+            <figure class="social__grid-item social__grid-item-3">
+                <img src="https://i1.adis.ws/i/bauer/Mav-Social-2@3x" alt="">
+            </figure>
+            <figure class="social__grid-item social__grid-item-4">
+                <img src="https://i1.adis.ws/i/bauer/Mav-Social-5@3x" alt="">
+            </figure>
+            <figure class="social__grid-item social__grid-item-5">
+                <img src="https://i1.adis.ws/i/bauer/Mav-Social-4@3x" alt="">
+            </figure>
+            <figure class="social__grid-item social__grid-item-6">
+                <img src="https://i1.adis.ws/i/bauer/Mav-Social-3@3x" alt="">
+            </figure>
+        </div>
+    </body>
+</html>

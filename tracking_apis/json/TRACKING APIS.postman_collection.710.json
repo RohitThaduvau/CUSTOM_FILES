@@ -1,0 +1,188 @@
+{
+	"info": {
+		"_postman_id": "0f2c393c-1343-434a-853f-1fe9f9ca2d34",
+		"name": "TRACKING APIS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "FEDEX TRACK SOAP",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:v14=\"http://fedex.com/ws/track/v14\">\r\n<soapenv:Header/>\r\n<soapenv:Body>\r\n   <v14:TrackRequest>\r\n      <v14:WebAuthenticationDetail>\r\n         <v14:ParentCredential>\r\n            <v14:Key>N2ACCvAhmj1Txkzx</v14:Key>\r\n            <v14:Password>QMcw3pHy35aO8R6YnFZkx5afz</v14:Password>\r\n         </v14:ParentCredential>\r\n         <v14:UserCredential>\r\n            <v14:Key>N2ACCvAhmj1Txkzx</v14:Key>\r\n            <v14:Password>QMcw3pHy35aO8R6YnFZkx5afz</v14:Password>\r\n         </v14:UserCredential>\r\n      </v14:WebAuthenticationDetail>\r\n      <v14:ClientDetail>\r\n         <v14:AccountNumber>947189298</v14:AccountNumber>\r\n         <v14:MeterNumber>112962718</v14:MeterNumber>\r\n      </v14:ClientDetail>\r\n      <v14:TransactionDetail>\r\n         <v14:CustomerTransactionId>Track By Number_v14</v14:CustomerTransactionId>\r\n         <v14:Localization>\r\n            <v14:LanguageCode>EN</v14:LanguageCode>\r\n            <v14:LocaleCode>US</v14:LocaleCode>\r\n         </v14:Localization>\r\n      </v14:TransactionDetail>\r\n      <v14:Version>\r\n         <v14:ServiceId>trck</v14:ServiceId>\r\n         <v14:Major>14</v14:Major>\r\n         <v14:Intermediate>0</v14:Intermediate>\r\n         <v14:Minor>0</v14:Minor>\r\n      </v14:Version>\r\n      <v14:SelectionDetails>\r\n         <v14:CarrierCode>FDXE</v14:CarrierCode>\r\n         <v14:PackageIdentifier>\r\n            <v14:Type>TRACKING_NUMBER_OR_DOORTAG</v14:Type>\r\n            <v14:Value>449848787238</v14:Value>\r\n         </v14:PackageIdentifier>\r\n        \r\n         <v14:ShipmentAccountNumber/>\r\n        \r\n\r\n         <v14:SecureSpodAccount/>\r\n           <v14:Destination>\r\n            <v14:GeographicCoordinates>rates evertitque aequora</v14:GeographicCoordinates>\r\n         </v14:Destination>\r\n      </v14:SelectionDetails>\r\n   </v14:TrackRequest>\r\n</soapenv:Body>\r\n</soapenv:Envelope>"
+				},
+				"url": {
+					"raw": "https://ws.fedex.com:443/web-services/track/",
+					"protocol": "https",
+					"host": [
+						"ws",
+						"fedex",
+						"com"
+					],
+					"port": "443",
+					"path": [
+						"web-services",
+						"track",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Demandware shipments GET",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Host",
+						"value": "peakathletics.oc.demandware.net"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-us"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/xml"
+					},
+					{
+						"key": "Accept",
+						"value": "application/xml"
+					},
+					{
+						"key": "x-dw-apitoken",
+						"value": "0CC2C144DB7641C599523298DDD22AA3"
+					},
+					{
+						"key": "x-dw-domain",
+						"value": "peakathletics.com"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "https://peakathletics.oc.demandware.net/3.9.7/api/core/v1/shipping_orders/(d16ae653-59f1-48c0-91f0-a8ac01171cd1)?expand=shipping_order_items,attributes,invoices",
+					"protocol": "https",
+					"host": [
+						"peakathletics",
+						"oc",
+						"demandware",
+						"net"
+					],
+					"path": [
+						"3.9.7",
+						"api",
+						"core",
+						"v1",
+						"shipping_orders",
+						"(d16ae653-59f1-48c0-91f0-a8ac01171cd1)"
+					],
+					"query": [
+						{
+							"key": "expand",
+							"value": "shipping_order_items,attributes,invoices"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Demandware shipments POST",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-dw-apitoken",
+						"value": "0CC2C144DB7641C599523298DDD22AA3"
+					},
+					{
+						"key": "x-dw-domain",
+						"value": "peakathletics.com"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/xml"
+					},
+					{
+						"key": "Host",
+						"value": "peakathletics.oc.demandware.net"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-us"
+					},
+					{
+						"key": "Accept",
+						"value": "application/xml"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<shipment_search_request xmlns=\"urn:demandware.com:bf:api:core:v1\" xmlns:i=\"http://www.w3.org/2001/XMLSchema-instance\">\r\n    <count>25</count>\r\n    <query>closed=1 and void=0 and site_cd in ('SAPUS','SAPCA','CSTSKATES')</query>\r\n    <select>id,guid,track,shippingOrderGuid,shipping_method_id,shipping_method_description</select>\r\n    <sync>\r\n      <filter>new</filter>\r\n      <guid>c6b53990-d5cc-4427-968c-a8ac01344284</guid>\r\n    </sync>\r\n</shipment_search_request>\r\n"
+				},
+				"url": {
+					"raw": "https://peakathletics.oc.demandware.net/3.9.7/api/core/v1/shipments/search",
+					"protocol": "https",
+					"host": [
+						"peakathletics",
+						"oc",
+						"demandware",
+						"net"
+					],
+					"path": [
+						"3.9.7",
+						"api",
+						"core",
+						"v1",
+						"shipments",
+						"search"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Purolator Track SOAP",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "login",
+						"value": "944fa3ec552e4229a77f6b598f20605b"
+					},
+					{
+						"key": "password",
+						"value": "o[2SW)V#"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:v1=\"http://purolator.com/pws/datatypes/v1\">\r\n   <soapenv:Header>\r\n      <v1:RequestContext>\r\n        <v1:Version>1.2</v1:Version>\r\n         <v1:Language>en</v1:Language>\r\n         <v1:GroupID></v1:GroupID>\r\n         <v1:RequestReference></v1:RequestReference>\r\n         <v1:login>944fa3ec552e4229a77f6b598f20605b</v1:login>\r\n         <v1:password>o[2SW)V#</v1:password>\r\n      </v1:RequestContext>\r\n   </soapenv:Header>\r\n   <soapenv:Body>\r\n      <v1:TrackPackagesByPinRequest>\r\n         <!--Optional:-->\r\n         <v1:PINs>\r\n            <!--Zero or more repetitions:-->\r\n            <v1:PIN>\r\n               <v1:Value>330647599480</v1:Value>\r\n            </v1:PIN>\r\n         </v1:PINs>\r\n      </v1:TrackPackagesByPinRequest>\r\n   </soapenv:Body>\r\n</soapenv:Envelope>\r\n"
+				},
+				"url": {
+					"raw": "https://webservices.purolator.com/PWS/V1/Tracking/TrackingService.asmx",
+					"protocol": "https",
+					"host": [
+						"webservices",
+						"purolator",
+						"com"
+					],
+					"path": [
+						"PWS",
+						"V1",
+						"Tracking",
+						"TrackingService.asmx"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,116 @@
+{
+    "$schema": "http://json-schema.org/schema#",
+    "id": "http://schema.cms.amplience.com/{{self.id}}",
+    "meta": {
+        "name": "Content - Call to Action",
+        "description": "",
+        "context": "http://context.cms.amplience.com/{{self.context.id}}",
+        "icons": [
+            {
+                "size": 256,
+                "url": "//i1.adis.ws/i/easton/CA_Icon_Content_Call_to_Action_new"
+            }
+        ],
+        "card": {
+            "uri": "//apps.dev-artifacts.adis.ws/cms-cards/master/latest/gallery/index.html",
+            "mapping": {
+                "headline": "/_title",
+                "image0": "/image/image"
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "#/definitions/self"
+        },
+        {
+            "$ref": "http://schema.system.cms.amplience.com/v0.0#/content-base"
+        }
+    ],
+    "definitions": {
+        "self": {
+            "type": "object",
+            "properties": {
+                "image": {
+                    "type": "object",
+                    "$ref": "http://schema.cms.amplience.com/{{utility-image.id}}",
+                    "_semanticType": "http://semantic-type.cms.amplience.com/content",
+                    "_interpolate": true,
+                    "_label": {
+                        "value": "Image"
+                    }
+                },
+                "video": {
+                    "type": "object",
+                    "allOf": [
+                        {
+                            "$ref": "http://schema.system.cms.amplience.com/v0.0#/di-asset-link"
+                        },
+                        {
+                            "properties": {
+                                "mediaType": {
+                                    "enum": [
+                                        "video"
+                                    ]
+                                }
+                            }
+                        }
+                    ],
+                    "_label": {
+                        "value": "Video"
+                    },
+                    "_semanticType": "http://semantic-type.cms.amplience.com/asset"
+                },
+                "videoIconColor": {
+                    "type": "string",
+                    "_label": {
+                        "value": "Video Icon/Label Color",
+                        "hint": "The color of the video icon and label"
+                    },
+                    "_semanticType": "http://semantic-type.cms.amplience.com/text"
+                },
+                "logo": {
+                    "type": "object",
+                    "$ref": "http://schema.cms.amplience.com/{{utility-image.id}}",
+                    "_semanticType": "http://semantic-type.cms.amplience.com/content",
+                    "_interpolate": true,
+                    "_label": {
+                        "value": "Logo"
+                    }
+                },
+                "heading": {
+                    "type": "object",
+                    "$ref": "http://schema.cms.amplience.com/{{utility-heading-simple.id}}",
+                    "_semanticType": "http://semantic-type.cms.amplience.com/content",
+                    "_interpolate": true,
+                    "_label": {
+                        "value": "Heading"
+                    }
+                },
+                "body": {
+                    "type": "object",
+                    "$ref": "http://schema.cms.amplience.com/{{utility-body.id}}",
+                    "_semanticType": "http://semantic-type.cms.amplience.com/content",
+                    "_interpolate": true,
+                    "_label": {
+                        "value": "Body"
+                    }
+                },
+                "cta": {
+                    "type": "object",
+                    "$ref": "http://schema.cms.amplience.com/{{utility-button.id}}",
+                    "_semanticType": "http://semantic-type.cms.amplience.com/content",
+                    "_interpolate": true,
+                    "_label": {
+                        "value": "Call to Action"
+                    }
+                }
+            },
+            "required": [
+                "image",
+                "heading",
+                "cta"
+            ]
+        }
+    }
+}

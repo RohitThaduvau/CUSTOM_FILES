@@ -1,0 +1,96 @@
+{
+    "$schema": "http://json-schema.org/schema#",
+    "id": "http://schema.cms.amplience.com/{{self.id}}",
+    "meta": {
+        "name": "Container - Grid Block",
+        "description": "",
+        "context": "http://context.cms.amplience.com/{{self.context.id}}",
+        "icons": [
+            {
+                "size": 256,
+                "url": "//i1.adis.ws/i/bauer/CA_Icon_Container_Grid_Block"
+            }
+        ],
+        "card": [
+            {
+                "id": "defaultcard",
+                "category": "card",
+                "default": true,
+                "label": "Default Card",
+                "uri": "//apps.dev-artifacts.adis.ws/cms-cards/master/latest/gallery/index.html",
+                "mapping": {
+                    "headline": "/_title",
+                    "image0": "/childContent/0/image/image",
+                    "image1": "/childContent/1/image/image",
+                    "image2": "/childContent/2/image/image",
+                    "image3": "/childContent/3/image/image"
+                }
+            },
+            {
+                "id": "defaultviz",
+                "category": "visualization",
+                "default": true,
+                "label": "Default Visualization",
+                "uri": "//dev01-na01-peakachievementathletics.demandware.net/on/demandware.static/Sites-Bauer-Site/-/default/amplience/salesforce/visualisation.html"
+            }
+        ]
+    },
+    "allOf": [
+        {
+            "$ref": "#/definitions/self"
+        },
+        {
+            "$ref": "http://schema.system.cms.amplience.com/v0.0#/content-base"
+        }
+    ],
+    "definitions": {
+        "self": {
+            "type": "object",
+            "properties": {
+                "childContent": {
+                    "type": "array",
+                    "items": {
+                        "allOf": [
+                            {
+                                "$ref": "http://schema.system.cms.amplience.com/v0.0#/content-link"
+                            },
+                            {
+                                "properties": {
+                                    "@type": {
+                                        "enum": [
+                                            "http://schema.cms.amplience.com/{{content-call-to-action.id}}",
+                                            "http://schema.cms.amplience.com/{{content-category-callout.id}}",
+                                            "http://schema.cms.amplience.com/{{content-style-callout.id}}"
+                                        ]
+                                    }
+                                }
+                            }
+                        ],
+                        "_semanticType": "http://semantic-type.cms.amplience.com/content"
+                    },
+                    "_label": {
+                        "value": "Child Content"
+                    },
+                    "_semanticType": "http://semantic-type.cms.amplience.com/list"
+                },
+                "columnSize": {
+                    "type": "string",
+                    "enum": [
+                        "25%",
+                        "33%",
+                        "50%",
+                        "100%"
+                    ],
+                    "_label": {
+                        "value": "Column Size"
+                    },
+                    "_semanticType": "http://semantic-type.cms.amplience.com/enum"
+                }
+            },
+            "required": [
+                "childContent",
+                "columnSize"
+            ]
+        }
+    }
+}

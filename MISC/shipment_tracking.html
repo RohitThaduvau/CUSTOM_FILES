@@ -1,0 +1,183 @@
+<link rel="stylesheet" type="text/css" href="https://staging-na01-peakachievementathletics.demandware.net/on/demandware.static/Sites-Bauer-Site/-/en_US/v1533842635111/css/style.css" />
+<link rel="stylesheet" type="text/css" href="./custom.css" />
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+  crossorigin="anonymous"></script>
+
+<!-- BoldChat Visitor Monitor HTML v5.00 (Website=Bauer Website,ChatButton=Bauer Floating Chat Button ,ChatInvitation=My Invite Ruleset) -->
+<script type="text/javascript">
+    window._bcvma = window._bcvma || [];
+    _bcvma.push(["setAccountID", "107413196557407589"]);
+    _bcvma.push(["setParameter", "WebsiteID", "228328903520681381"]);
+    _bcvma.push(["setParameter", "InvitationID", "107514765689098896"]);
+    _bcvma.push(["setParameter", "VisitName", ""]);
+    _bcvma.push(["setParameter", "VisitPhone", ""]);
+    _bcvma.push(["setParameter", "VisitEmail", ""]);
+    _bcvma.push(["setParameter", "VisitRef", ""]);
+    _bcvma.push(["setParameter", "VisitInfo", ""]);
+    _bcvma.push(["setParameter", "CustomUrl", ""]);
+    _bcvma.push(["setParameter", "WindowParameters", ""]);
+    _bcvma.push(["addFloat", {type: "chat", id: "8455493747843630428"}]);
+    _bcvma.push(["pageViewed"]);
+    var bcLoad = function(){
+      if(window.bcLoaded) return; window.bcLoaded = true;
+      var vms = document.createElement("script"); vms.type = "text/javascript"; vms.async = true;
+      vms.src = ('https:'==document.location.protocol?'https://':'http://') + "vmss.boldchat.com/aid/107413196557407589/bc.vms4/vms.js";
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(vms, s);
+    };
+    if(window.pageViewer && pageViewer.load) pageViewer.load();
+    else if(document.readyState=="complete") bcLoad();
+    else if(window.addEventListener) window.addEventListener('load', bcLoad, false);
+    else window.attachEvent('onload', bcLoad);
+    console.log("executed");
+  </script>
+  <noscript>
+  <a href="http://www.boldchat.com" title="Live Support" target="_blank"><img alt="Live Support" src="https://vms.boldchat.com/aid/107413196557407589/bc.vmi?wdid=228328903520681381&amp;vr=&amp;vn=&amp;vi=&amp;ve=&amp;vp=&amp;curl=" border="0" width="1" height="1" /></a>
+  </noscript>
+  <!-- /BoldChat Visitor Monitor HTML v5.00 -->
+<style>
+    .shipment__tracking {
+        height: 100%;
+        padding: 8%;
+        text-align: center;
+        min-height: fit-content;
+        margin-bottom: -75px;
+        background: url(https://i1.adis.ws/i/bauer/Page-Order-Tracking-BackgroundImage@3x) no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+    .shipment__tracking__block {
+        height: 100%;
+        max-width: 1000px;
+        background-color: #fff;
+        color: #000;
+        min-height: fit-content;
+        opacity: 0.95;
+    }
+    .shipment__tracking__sub-block {
+        max-width: 600px;
+        padding: 50px 20px 100px;
+    }
+    .center__container {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .shipment__tracking .custom-grid-eyebrow {
+        font-size: 16px;
+    }
+    .shipment__tracking label {
+        float: left;
+        padding-bottom: 5px;
+    }
+    .shipment__tracking label.error-label {
+        color: #FD3A2B;
+        padding: 5px 0;
+    }
+    .shipment__tracking  .c-button {
+        color: #000;
+    }
+    .shipment__tracking .tracking-feild {
+        background-color: #EEEEEE;
+    }
+    .shipment__tracking .tracking-feild.has-errors {
+        border: 1px solid #FD3A2B;
+    }
+    .shipment__tracking .amp-ca-text {
+        padding: 30px 0 20px;
+    }
+    .shipment__tracking button {
+        margin-top: 35px;
+        display: block;
+    }
+    .shipment__tracking img {
+        padding-bottom: 25px;
+        max-width: 200px;
+        max-height: 50px;
+    }
+</style>
+<div class="shipment__tracking center__container">
+    <div class="shipment__tracking__block center__container">
+        <div class="shipment__tracking__sub-block center__container">
+            <div class="custom-grid-eyebrow">
+                TRACKING
+            </div>
+            <div class="c-recommendations__heading">
+                INFORMATION
+            </div>
+            <div class="amp-ca-text">
+                <strong>SERVICE PROVIDER</strong>
+            </div>
+            <img src="" alt="" class="provider-logo" style="display: none;"/>
+            <form id="form-track-shipment">
+                <label>Tracking Number</label>
+                <input class="tracking-feild" type="number" name="traking-number" value="">
+                <label class="error-label" style="display: none;">Incorrect Traking Number</label>
+                <button class="c-button c-button--secondary-outline center__container" type="submit" value="Submit">TRACK</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script>
+    $('.tracking-feild').keyup(function(event) {
+        var image_source = "";
+        var alt_text ="";
+        var provider = $('.tracking-feild').val().substr(0, 1);
+        if (provider == 4) {
+            image_source = "https://i1.adis.ws/i/bauer/fedex_logo";
+            alt_text = "FedEx Logo";
+            $('.provider-logo').show();
+        }else if(provider == 6) {
+            image_source = "https://www.purolator.com/assets/img/logo-purolator.gif";
+            alt_text = "Purolator Inc.";
+            $('.provider-logo').show();
+        }else {
+            $('.provider-logo').hide();
+        }
+        $('.provider-logo').attr('src', image_source);
+        $('.provider-logo').attr('alt', alt_text);
+    });
+    jQuery('#form-track-shipment').submit(function(e) {
+        e.preventDefault();
+        var data = $(this).serializeArray();
+        var traking_number = data[0].value;
+        try {
+            var len = Math.ceil(Math.log(traking_number + 1) / Math.LN10);
+            var l = Math.pow(10, Math.floor(Math.log(traking_number)/Math.log(10)));
+            var b = Math.floor(traking_number/l);
+            var digit = b-Math.floor(b/10)*10;
+        }catch(e) { }
+        var default_lan = "en";
+        var default_lan_fedex = "en_US";
+        function getLocaleLanguage() {
+            var language_toggle = ["fr_CA", "fr-CA"];
+            for ( var i=0; i< language_toggle.length ; i++ ) {
+                if(window.location.href.indexOf(language_toggle[i]) > -1) {
+                    default_lan = "fr";
+                    default_lan_fedex="fr_CA";
+                    break;
+                }
+            }
+        }
+        var check_shipment_service = (digit == 4 || digit ==6 ) ? true : false;
+        if(len == 13 && check_shipment_service) {
+            $('.shipment__tracking label.error-label').hide();
+            $('.shipment__tracking .tracking-feild').removeClass('has-errors');
+            getLocaleLanguage();
+            if (digit == 4) {
+                var fedex_url = "https://www.fedex.com/apps/fedextrack/?action=track&tracknumber="+ traking_number + "&locale=" + default_lan_fedex;
+                window.open(fedex_url);
+            }else if(digit == 6) {
+                var purlator_url = "https://www.purolator.com/" + default_lan + "/ship-track/tracking-details.page?pin="+ traking_number;
+                window.open(purlator_url);
+            }
+        }else {
+            $('.shipment__tracking label.error-label').show();
+            $('.shipment__tracking .tracking-feild').addClass('has-errors');
+        }
+    });
+</script>
+
+
+  

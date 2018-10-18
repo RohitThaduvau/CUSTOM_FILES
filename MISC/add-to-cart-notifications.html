@@ -1,0 +1,150 @@
+<style>
+
+    .push-nav-notification {
+        position: fixed;
+        width: 100%;
+        padding: 10px 40px;;
+        background-color: #fff;
+        z-index: 210;
+        transition: all 0.3s ease;
+    }
+    .push-nav-left, 
+    .push-nav-right,
+    .push-nav-price {
+        display: inline-block;
+    }
+    .push-nav-left {
+        float: left;
+        text-align: left;
+    }
+    .push-nav-right {
+        float: right;
+    }
+    .push-nav-price {
+        font-weight: bold;
+    }
+    .push-nav-notification a,
+    .push-nav-notification button {
+        max-width: 250px;
+        min-width: 250px;
+    }
+    .push-nav-notification .c-button {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .c-product-details__quantity-add-to-cart #add-to-cart {
+        margin: 0 10px;
+    }
+    .push-nav-right #add-to-cart-notification {
+        margin: 0 15px;
+    }
+
+     @media screen and (min-width: 1280px) {
+        #push-nav-find-store {
+            display: none;
+        }
+     }
+
+      @media screen and (max-width: 1280px) {
+        .push-nav-notification {
+            display: none;
+        }
+     }
+
+     @media screen and (max-width: 600px) {
+        #push-nav-find-store .c-icon-location-blue{
+            height: 45px;
+            width: 20px;
+            margin-right: 0;
+        }
+        #push-nav-find-store {
+            padding: 0;
+        }
+        .c-product-details__add-to-cart-button .c-icon-cart-white {
+            margin-right: 0;
+        }
+        #push-nav-find-store span,
+        .c-product-details__quantity-add-to-cart #add-to-cart span{
+            display: none;
+        }
+     }
+
+</style>
+
+<script>
+
+    function addPushNavNotificationDesktop() {
+        try {
+            if($('#pdpMain').length == 1) {
+                var notification = $('<div class="push-nav-notification" style="display:none;"><div class="push-nav-left"><img class="push-nav-logo" src=""  /><h2 class="push-nav-title"></h2></div><div class="push-nav-right"><div class="push-nav-price"></div><button id="add-to-cart-notification" type="submit" title="Add to Cart" value="Add to Cart" class="c-button c-product-details__add-to-cart-button add-to-cart"><svg class="c-icon c-icon-cart-white" aria-hidden="true"><use xlink:href="/on/demandware.static/Sites-Bauer-Site/-/default/dwdb329b63/svg/symbols.svg#svg-icon-cart-white"></use></svg><span>Add to Cart</span></button><a title="Find a Store" id="find-store" class="c-button c-button--tertiary-outline c-button--full-width" target="_blank" href="https://staging-na01-peakachievementathletics.demandware.net/s/Bauer/en-US/stores"><svg class="c-icon c-icon-location-blue" aria-hidden="true"><use xlink:href="/on/demandware.static/Sites-Bauer-Site/-/default/dwdb329b63/svg/symbols.svg#svg-icon-location-blue"></use></svg><span>Find a Store</span></a></div></div>');
+
+                $('header.st-global-header').after(notification);
+
+                $('#add-to-cart-notification.c-button.c-product-details__add-to-cart-button.add-to-cart').on('click', function(){
+                    $( ".c-product-details__quantity-add-to-cart #add-to-cart.c-button.c-product-details__add-to-cart-button.add-to-cart" ).trigger( "click" );
+                });
+            }
+        }catch(e) {} 
+    }
+
+    function addPushNavNotificationMobile() {
+        try {
+            if($('#pdpMain').length == 1) {
+                var mobilenotification = $('<a title="Find a Store" id="push-nav-find-store" class="c-button c-button--tertiary-outline c-button--full-width" href="https://staging-na01-peakachievementathletics.demandware.net/s/Bauer/en-CA/stores"><svg class="c-icon c-icon-location-blue" aria-hidden="true"><use xlink:href="/on/demandware.static/Sites-Bauer-Site/-/default/dwdb329b63/svg/symbols.svg#svg-icon-location-blue"></use></svg><span>Find a Store</span></a>');
+
+                $('.c-product-details__quantity-add-to-cart').append(mobilenotification);
+                
+                var addtocarticon = $('<svg class="c-icon c-icon-cart-white" aria-hidden="true"><use xlink:href="/on/demandware.static/Sites-Bauer-Site/-/default/dwdb329b63/svg/symbols.svg#svg-icon-cart-white"></use></svg><span>Add to Cart</span>');
+                $('.c-product-details__quantity-add-to-cart #add-to-cart').html(addtocarticon);
+            }
+        }catch(e) {}  
+    }
+
+    addPushNavNotificationDesktop();
+    addPushNavNotificationMobile();
+
+    function scrollNotiificationMenu() {
+        try {
+            if($('#pdpMain').length == 1 && $(window).width() > 1279) {
+                var lastScrollTop = $(window).scrollTop();
+                $(window).scroll(function(event){
+                var st = $(this).scrollTop();
+                var cart_el = $('.c-product-details__quantity-add-to-cart').offset().top;
+                var nv = $('header.st-global-header').outerHeight();
+                if (st > lastScrollTop && nv == 0 && $(window).width() > 1279 && lastScrollTop > cart_el){
+                    $('.push-nav-notification').css('top', '0');
+                    $('.push-nav-notification').show();
+                }else if (lastScrollTop > st && lastScrollTop > cart_el && $(window).width() > 1279){
+                    $('.st-global-header__main-bar').css('display', 'none');
+                }else {
+                    $('.push-nav-notification').hide();
+                    $('.st-global-header__main-bar').css('display', 'block');
+                }
+                lastScrollTop = st;
+                });
+            }else {
+                $('.push-nav-notification').hide();
+            }
+        }catch(e) {} 
+    }
+
+    var targetNode = document.getElementById('product-content');
+    var config = { attributes: true, childList: true, subtree: true };
+    var callback = function(mutationsList) {
+        if($('.add-to-cart.c-button.c-product-details__add-to-cart-button.add-to-cart').length  > 1) {
+            var pushnavimage = $('.c-product-details__brand-image').attr('src');
+            var pushnavtitile = $('.c-product-details__product-name.product-name').text();
+            var pushnavprice = $('.c-product-details__price.product-price span').text();
+            $('img.push-nav-logo').attr('src', pushnavimage);
+            $('.push-nav-title').text(pushnavtitile);
+            $('.push-nav-price').text(pushnavprice);
+            scrollNotiificationMenu();
+        } 
+        if ($('#push-nav-find-store').length == 0) {
+            addPushNavNotificationMobile();
+        }
+    }
+    var observer = new MutationObserver(callback);  
+    observer.observe(targetNode, config);
+
+</script>

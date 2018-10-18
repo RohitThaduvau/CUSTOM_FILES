@@ -75,15 +75,9 @@
                             <tr>
                                 <td align="center">
                                     <table border="0" cellpadding="0" cellspacing="0" width="100%" style="font-size: 13px;">
-                                        {dynamic_code} {loop}
                                         <tr>
                                             <td align="center">
-                                                Trcaking Number: %%#track#%%
-                                            </td>
-                                        </tr>{/loop} {/dynamic_code}
-                                        <tr>
-                                            <td align="center">
-                                                Order Number: %%#orderNumber%%
+                                                Tracking Number: %%#tracking%%
                                             </td>
                                         </tr>
                                     </table>
@@ -91,10 +85,10 @@
                             </tr>
                             <tr>
                                 <td align="center">
-                                    <table border="0" cellpadding="25" cellspacing="0" width="100%">
+                                    <table border="0" cellpadding="25" cellspacing="0" width="100%" style="max-width: 460px; padding: 20px 0;">
                                         <tr>
-                                            <td align="center">
-                                                <strong>Items Ordered:</strong>
+                                            <td align="center" style="text-transform: uppercase; font-size: 14px; padding: 10px; background-color: #D8D8D8;">
+                                                Products Shipped 
                                             </td>
                                         </tr>
                                     </table>
@@ -104,34 +98,21 @@
                                 <td align="center">
                                     <table border="0" cellpadding="20" cellspacing="0" width="100%" style="max-width: 500px;">
                                         <tr>
-                                            <td align="center" style="vertical-align: top;">
-                                                <img src="%%#productImgUrl_#%%" alt="BAUER Hockey Home" title="BAUER Hockey" width="250" style="width:100%; max-width: 200px; max-height: 200px">
-                                            </td>
-                                            <td align="left">
+                                            <td>
                                                 <table border="0" cellpadding="0" cellspacing="0" width="100%">
                                                     <tr>
-                                                        <td align="" style="text-transform: uppercase;">
+                                                        <td align="center" style="text-transform: uppercase;">
                                                             <strong>%%#productName_#%%</strong> 
                                                         </td>
                                                     </tr>
                                                     <tr>
-                                                        <td align="" style="font-size: 13px;">
-                                                           Product id: %%#productId_#%% 
+                                                        <td align="center" style="font-size: 13px;">
+                                                            Product id: %%#productId_#%% 
                                                         </td>
                                                     </tr>
                                                     <tr>
-                                                        <td align="" style="font-size: 13px;">
-                                                            Size: %%#productVars_#%% 
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td align="" style="padding-top: 20px">
-                                                           <strong>Price:</strong> %%#productAdjPrice_#%%
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td align="">
-                                                           <strong>Qty:</strong> %%#productQuantity_#%%
+                                                        <td align="center">
+                                                            <strong>Qty:</strong> %%#quantityOrdered_#%%
                                                         </td>
                                                     </tr>
                                                 </table>
@@ -139,82 +120,11 @@
                                         </tr>
                                     </table>
                                 </td>
-                            </tr>{/loop} {/dynamic_code}<!-- END PRODUCTS LIST -->
-                            <tr>
-                                <td align="center">
-                                    <table border="0" cellpadding="20" cellspacing="0" width="100%" style="max-width: 500px;">
-                                        <tr>
-                                            <td align="center" style="vertical-align: top;">
-                                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
-                                                    <tr>
-                                                        <td align="center" style="text-transform: uppercase; font-size: 14px; padding: 10px; background-color: #D8D8D8;;">
-                                                            Payment Total 
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td align="left" style="font-size: 13px; padding-top: 20px;">
-                                                            Subtotal: %%#orderSubtotal%%
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td align="left" style="font-size: 13px;">
-                                                            Shipping: %%#orderShipping%%
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td align="left" style="font-size: 13px; color: #009cda;">
-                                                            Discount: - %%#orderDiscWithShip%%
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td align="left" style="font-size: 13px;">
-                                                            Sales Tax: %%#orderTax%%
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td align="left" style="padding-top: 20px;">
-                                                            <strong>Total:</strong> %%#orderGrandTotal%%
-                                                        </td>
-                                                    </tr>
-                                                </table>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </td>
-                            </tr>
+                            </tr>{/loop} {/dynamic_code}<!-- END PRODUCTS LIST -->          
                             <tr>
                                 <td align="center">
                                     <table border="0" cellpadding="20" cellspacing="0" width="100%" style="max-width: 500px; padding-bottom: 15px;">
                                         <tr>
-                                            <td align="center" style="vertical-align: top;">
-                                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
-                                                    <tr>
-                                                        <td align="center" style="text-transform: uppercase; font-size: 14px; padding: 10px; background-color: #D8D8D8;;">
-                                                            Billing Address
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td align="center" style="font-size: 13px; padding-top: 20px;">
-                                                            %%#billFullName%% 
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td align="center" style="font-size: 13px;">
-                                                            %%#billAddress1%%  %%#billAddress2%%
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td align="center" style="font-size: 13px;">
-                                                            %%#billCity%%,
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td align="center" style="font-size: 13px;">
-                                                            %%#shipState%%, %%#shipPostalCode%%
-                                                        </td>
-                                                    </tr>
-                                                </table>
-                                            </td>
                                             <td align="center" style="vertical-align: top;">
                                                 <table border="0" cellpadding="0" cellspacing="0" width="100%">
                                                     <tr>
@@ -224,22 +134,22 @@
                                                     </tr>
                                                     <tr>
                                                         <td align="center" style="font-size: 13px; padding-top: 20px;">
-                                                            %%#shipFullName%%
+                                                            %%#shipto_fullName%%
                                                         </td>
                                                     </tr>
                                                     <tr>
                                                         <td align="center" style="font-size: 13px;">
-                                                            %%#shipAddress1%% %%#shipAddress2%% 
+                                                            %%#shipto_address1%%
                                                         </td>
                                                     </tr>
                                                     <tr>
                                                         <td align="center" style="font-size: 13px;">
-                                                            %%#shipCity%%,
+                                                            %%#shipto_city%%, 
                                                         </td>
                                                     </tr>
                                                     <tr>
                                                         <td align="center" style="font-size: 13px;">
-                                                            %%#shipState%%, %%#shipPostalCode%%
+                                                            %%#shipto_stateCode%%, %%#shipto_postalCode%%, %%#shipto_countryCode%%
                                                         </td>
                                                     </tr>
                                                 </table>
@@ -408,15 +318,9 @@
                             <tr>
                                 <td align="center">
                                     <table border="0" cellpadding="0" cellspacing="0" width="100%" style="font-size: 13px;">
-                                        {dynamic_code} {loop}
                                         <tr>
                                             <td align="center">
-                                                Numéro de suivi: %%#track#%%
-                                            </td>
-                                        </tr>{/loop} {/dynamic_code}
-                                        <tr>
-                                            <td align="center">
-                                                Numéro de commande: %%#orderNumber%%
+                                                Numéro de suivi: %%#tracking%%
                                             </td>
                                         </tr>
                                     </table>
@@ -424,10 +328,10 @@
                             </tr>
                             <tr>
                                 <td align="center">
-                                    <table border="0" cellpadding="25" cellspacing="0" width="100%">
+                                    <table border="0" cellpadding="25" cellspacing="0" width="100%" style="max-width: 460px; padding: 20px 0;">
                                         <tr>
-                                            <td align="center">
-                                                <strong>Articles commandés:</strong>
+                                            <td align="center" style="text-transform: uppercase; font-size: 14px; padding: 10px; background-color: #D8D8D8;;">
+                                                <strong>Articles commandés</strong>
                                             </td>
                                         </tr>
                                     </table>
@@ -437,34 +341,21 @@
                                 <td align="center">
                                     <table border="0" cellpadding="20" cellspacing="0" width="100%" style="max-width: 500px;">
                                         <tr>
-                                            <td align="center" style="vertical-align: top;">
-                                                <img src="%%#productImgUrl_#%%" alt="BAUER Hockey Home" title="BAUER Hockey" width="250" style="width:100%; max-width: 200px; max-height: 200px">
-                                            </td>
-                                            <td align="left">
+                                            <td>
                                                 <table border="0" cellpadding="0" cellspacing="0" width="100%">
                                                     <tr>
-                                                        <td align="" style="text-transform: uppercase;">
+                                                        <td align="center" style="text-transform: uppercase;">
                                                             <strong>%%#productName_#%%</strong> 
                                                         </td>
                                                     </tr>
                                                     <tr>
-                                                        <td align="" style="font-size: 13px;">
+                                                        <td align="center" style="font-size: 13px;">
                                                             Identifiant: %%#productId_#%% 
                                                         </td>
                                                     </tr>
                                                     <tr>
-                                                        <td align="" style="font-size: 13px;">
-                                                            Grandeur: %%#productVars_#%% 
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td align="" style="padding-top: 20px">
-                                                            <strong>Prix:</strong> %%#productAdjPrice_#%%
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td align="">
-                                                            <strong>Quantité:</strong> %%#productQuantity_#%%
+                                                        <td align="center">
+                                                            <strong>Quantité:</strong> %%#quantityOrdered_#%%
                                                         </td>
                                                     </tr>
                                                 </table>
@@ -475,79 +366,8 @@
                             </tr>{/loop} {/dynamic_code}<!-- END PRODUCTS LIST -->
                             <tr>
                                 <td align="center">
-                                    <table border="0" cellpadding="20" cellspacing="0" width="100%" style="max-width: 500px;">
-                                        <tr>
-                                            <td align="center" style="vertical-align: top;">
-                                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
-                                                    <tr>
-                                                        <td align="center" style="text-transform: uppercase; font-size: 14px; padding: 10px; background-color: #D8D8D8;;">
-                                                            Paiement total 
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td align="left" style="font-size: 13px; padding-top: 20px;">
-                                                            Sous-total: %%#orderSubtotal%%
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td align="left" style="font-size: 13px;">
-                                                            Livraison: %%#orderShipping%%
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td align="left" style="font-size: 13px; color: #009cda;">
-                                                            Remise: - %%#orderDiscWithShip%%
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td align="left" style="font-size: 13px;">
-                                                            Taxe de vente: %%#orderTax%%
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td align="left" style="padding-top: 20px;">
-                                                            <strong>Total:</strong> %%#orderGrandTotal%%
-                                                        </td>
-                                                    </tr>
-                                                </table>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td align="center">
                                     <table border="0" cellpadding="20" cellspacing="0" width="100%" style="max-width: 500px; padding-bottom: 15px;">
                                         <tr>
-                                            <td align="center" style="vertical-align: top;">
-                                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
-                                                    <tr>
-                                                        <td align="center" style="text-transform: uppercase; font-size: 14px; padding: 10px; background-color: #D8D8D8;;">
-                                                            Adresse de facturation
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td align="center" style="font-size: 13px; padding-top: 20px;">
-                                                            %%#billFullName%% 
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td align="center" style="font-size: 13px;">
-                                                            %%#billAddress1%%  %%#billAddress2%%
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td align="center" style="font-size: 13px;">
-                                                            %%#billCity%%,
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td align="center" style="font-size: 13px;">
-                                                            %%#shipState%%, %%#shipPostalCode%%
-                                                        </td>
-                                                    </tr>
-                                                </table>
-                                            </td>
                                             <td align="center" style="vertical-align: top;">
                                                 <table border="0" cellpadding="0" cellspacing="0" width="100%">
                                                     <tr>
@@ -557,22 +377,22 @@
                                                     </tr>
                                                     <tr>
                                                         <td align="center" style="font-size: 13px; padding-top: 20px;">
-                                                            %%#shipFullName%%
+                                                            %%#shipto_fullName%%
                                                         </td>
                                                     </tr>
                                                     <tr>
                                                         <td align="center" style="font-size: 13px;">
-                                                            %%#shipAddress1%% %%#shipAddress2%% 
+                                                            %%#shipto_address1%% 
                                                         </td>
                                                     </tr>
                                                     <tr>
                                                         <td align="center" style="font-size: 13px;">
-                                                            %%#shipCity%%,
+                                                            %%#shipto_city%%, 
                                                         </td>
                                                     </tr>
                                                     <tr>
                                                         <td align="center" style="font-size: 13px;">
-                                                            %%#shipState%%, %%#shipPostalCode%%
+                                                            %%#shipto_stateCode%%, %%#shipto_postalCode%%, %%#shipto_countryCode%%
                                                         </td>
                                                     </tr>
                                                 </table>

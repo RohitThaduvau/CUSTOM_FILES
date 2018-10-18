@@ -1,0 +1,118 @@
+<html>
+    <style>
+        /* * {
+        margin: 0;
+        padding: 0;
+        }
+        *,
+        *::before,
+        *::after {
+            box-sizing: inherit;
+        }
+        html {
+            box-sizing: border-box;
+        } */
+        .social__grid-women img,
+        .social__grid-women video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .social__grid-women video {
+            object-fit: scale-down;
+        }
+        .social__grid-women {
+            display: -ms-grid;
+            display: grid;
+            -ms-grid-columns: 1fr 1fr 1fr;
+            grid-template-columns: repeat(3 , 1fr);
+            -ms-grid-rows: 15vw 15vw 15vw;
+            grid-template-rows: repeat(3, 15vw);
+            grid-gap: 4px;
+        }
+        .social__grid-women-item-1 {
+            -ms-grid-row: 1;
+            -ms-grid-row-span: 1;
+            grid-row: 1/span 1;
+            -ms-grid-column: 1;
+            -ms-grid-column-span: 1;
+            grid-column: 1/span 1;
+        }
+        .social__grid-women-item-2 {
+            -ms-grid-row: 1;
+            -ms-grid-row-span: 1;
+            grid-row: 1/span 1;
+            -ms-grid-column: 2;
+            -ms-grid-column-span: 1;
+            grid-column: 2/span 1;
+        }
+        .social__grid-women-item-3 {
+            -ms-grid-row: 1;
+            -ms-grid-row-span: 1;
+            grid-row: 1/span 1;
+            -ms-grid-column: 3;
+            -ms-grid-column-span: 1;
+            grid-column: 3/span 1;
+        }
+        .social__grid-women-item-4 {
+            -ms-grid-row: 2;
+            -ms-grid-row-span: 1;
+            grid-row: 2/span 1;
+            -ms-grid-column: 1;
+            -ms-grid-column-span: 1;
+            grid-column: 1/span 1;
+        }
+        .social__grid-women-item-5 {
+            -ms-grid-row: 3;
+            -ms-grid-row-span: 1;
+            grid-row: 3/span 1;
+            -ms-grid-column: 1;
+            -ms-grid-column-span: 1;
+            grid-column: 1/span 1;
+        }
+        .social__grid-women-item-6 {
+            -ms-grid-row: 2;
+            -ms-grid-row-span: 2;
+            grid-row: 2/span 2;
+            -ms-grid-column: 2;
+            -ms-grid-column-span: 2;
+            grid-column: 2/span 2;
+        }
+        @media (min-width: 768px) {
+            .social__grid-women {
+                padding-left: 2px;
+            }
+        }
+        @media (max-width: 767px) {
+            .social__grid-women {
+                -ms-grid-rows: 30vw 30vw 30vw;
+                grid-template-rows: repeat(3, 30vw);
+            }
+        }
+    </style>
+    <body>
+        <h1 class="social-header"><a href="https://www.instagram.com/maverikwlx/" target="_blank">@MAVERIKWLX</a></h1>
+        <div class="social__grid-women">
+            <figure class="social__grid-women-item social__grid-women-item-1">
+                <img src="https://i1.adis.ws/i/bauer/MavWom-Social-1@3x" alt="">
+            </figure>
+            <figure class="social__grid-women-item social__grid-women-item-2">
+                <img src="https://i1.adis.ws/i/bauer/MavWom-Social-5@3x" alt="">
+            </figure>
+            <figure class="social__grid-women-item social__grid-women-item-3">
+                <img src="https://i1.adis.ws/i/bauer/MavWom-Social-3@3x" alt="">
+            </figure>
+            <figure class="social__grid-women-item social__grid-women-item-4">
+                <img src="https://i1.adis.ws/i/bauer/MavWom-Social-4@3x" alt="">
+            </figure>
+            <figure class="social__grid-women-item social__grid-women-item-5">
+                <img src="https://i1.adis.ws/i/bauer/MavWom-Social-5@3x" alt="">
+            </figure>
+            <div class="social__grid-women-item social__grid-women-item-6">
+                <video id="women_social_video" controls poster="https://i1.adis.ws/i/bauer/Womens-Social-Video-Image@3x">
+                    <source src="https://s1.adis.ws/bauer/_vid/womens-social-video/7dd427b1-0f57-47dd-8700-942edaa37660/video/5eea3bb2-7cd5-40e4-9490-6ecf441eaea1.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </body>
+</html>
