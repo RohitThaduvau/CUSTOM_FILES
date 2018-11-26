@@ -1,0 +1,154 @@
+html{
+	overflow-y: scroll;
+}
+body {
+	background-color:white;
+	color: #FFF;
+	font-family: "TradeGothicLTStd";
+	font-size: 26px;
+	margin: 0;
+	padding: 0;
+	overflow-y: scroll;
+}
+.topbar {
+    /* overflow: hidden; */
+    background-color: white;
+    /* position: fixed; Set the navbar to fixed position */
+    /* top: 0; Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    text-align: center;
+    height: 50px;
+    padding: 10px 0 0 0;
+    border-bottom: 2px solid #c8102e;;
+  }
+  
+
+.bottombar{
+    /* overflow: hidden; */
+    background-color: black;
+    /* position: fixed; Set the navbar to fixed position */
+    /* bottom: 0; Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    text-align: center;
+    height: 100px;
+    padding: 10px 0px 10px 0px;
+}
+
+img {
+	max-width: 100%;
+}
+
+h2 {
+	font-family: "TradeGothicLTStd-BdCn20";
+	font-size: 36px;
+	margin-top: 0;
+}
+
+.results {
+	padding-top: 30px;
+	padding-right: 22px;
+	padding-left: 22px;
+	text-align: left;
+}
+
+.img-holder img{
+
+ border: 1px solid lightgrey;
+}
+
+.thumbs img{
+    width: 100px;
+    margin: 0 0 20px;
+    border: 1px solid lightgrey;
+}
+
+.thumbs img:hover{
+
+    border: 1px solid red;
+}
+
+.results_price {
+	/* background-color: #e21743; */
+	font-family: "TradeGothicLTStd-BdCn20";
+	padding: 14px 17px 10px;
+	text-align: center;
+	color: black;
+	display: inline-block;
+	width: 100%;
+	font-size: 32px;
+}
+
+#get_one_button {
+	background-color: #c8102e;
+	/* flex-basis: 50%; */
+	font-family: "TradeGothicLTStd-BdCn20";
+	text-align: center;
+	width: 100%;
+	/* font-size: 48px; */
+	display: inline-block;
+	color: white;
+	border-radius: 5px;
+	margin-bottom: 20px;
+	line-height: 1.5;
+	margin-top: -5px;
+	
+}
+#get_one_button a{
+	color: white;
+	font-size: 32px;	
+}
+
+.related-product_name {
+	font-family: "VenusRising";
+	font-size: 20px;
+	margin-bottom: 0;
+	color: grey;
+	font-weight: 600;
+	letter-spacing: 1px;
+
+}
+
+hr{
+	background-color:grey; 
+	height: 1px; 
+	border: 0;	
+}
+.related-product_intro{
+	color: #808080;
+}
+.short_desc{
+	padding: 0 0 10px 0;
+}
+.centrify{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.store_box {
+	max-width: 200px;
+	margin-top: 70px;
+	border: 2px solid #d8d8d8;
+	padding: 60px 10px;
+}
+
+.main_img{
+	max-height: 700px;
+}
+#stick_name{
+    color: #c8102e;
+    -ms-flex-order: 1;
+    order: 1;
+    font-family: VenusRising;
+    font-size: 36px;
+    margin-bottom: 8px;
+}
+.results__byline {
+    color: #201d1d;
+    display: block;
+    font-family: TradeGothicLTStd;
+    font-size: 20px;
+    font-weight: 400;
+	margin: 5px 0px 10px 0px;
+	line-height: normal;
+	font-weight: 200;
+}

@@ -1,0 +1,544 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "label": "Style of Play",
+      "question": "What's your style of play?",
+      "multiplier": 1,
+      "answers": [
+        {
+          "id": "q1a1",
+          "answer": "Feeder",
+          "answerDescriptive": "feeder",
+          "values": [
+            {
+              "id": "optik",
+              "value": 4
+            },
+            {
+              "id": "tactik",
+              "value": 3
+            },
+            {
+              "id": "kinetik",
+              "value": 2
+            },
+            {
+              "id": "centrik",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "id": "q1a2",
+          "answer": "Dodger",
+          "answerDescriptive": "dodger",
+          "values": [
+            {
+              "id": "optik",
+              "value": 3
+            },
+            {
+              "id": "tactik",
+              "value": 4
+            },
+            {
+              "id": "kinetik",
+              "value": 2
+            },
+            {
+              "id": "centrik",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "id": "q1a3",
+          "answer": "Finisher",
+          "answerDescriptive": "finisher",
+          "values": [
+            {
+              "id": "optik",
+              "value": 2
+            },
+            {
+              "id": "tactik",
+              "value": 3
+            },
+            {
+              "id": "kinetik",
+              "value": 4
+            },
+            {
+              "id": "centrik",
+              "value": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q2",
+      "label": "Statistics",
+      "question": "What's on your stat sheet?",
+      "multiplier": 2,
+      "answers": [
+        {
+          "id": "q2a1",
+          "answer": "More goals than assists",
+          "answerDescriptive": "more goals than assists",
+          "values": [
+            {
+              "id": "optik",
+              "value": 2
+            },
+            {
+              "id": "tactik",
+              "value": 3
+            },
+            {
+              "id": "kinetik",
+              "value": 4
+            },
+            {
+              "id": "centrik",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "id": "q2a2",
+          "answer": "More assists than goals",
+          "answerDescriptive": "more assists than goals",
+          "values": [
+            {
+              "id": "optik",
+              "value": 4
+            },
+            {
+              "id": "tactik",
+              "value": 3
+            },
+            {
+              "id": "kinetik",
+              "value": 2
+            },
+            {
+              "id": "centrik",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "id": "q2a3",
+          "answer": "Goals and assists are even",
+          "answerDescriptive": "an even split of goals and assists",
+          "values": [
+            {
+              "id": "optik",
+              "value": 3
+            },
+            {
+              "id": "tactik",
+              "value": 4
+            },
+            {
+              "id": "kinetik",
+              "value": 2
+            },
+            {
+              "id": "centrik",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "id": "q2a4",
+          "answer": "GB’s dominate my stat sheet",
+          "answerDescriptive": "a nose for GB's",
+          "values": [
+            {
+              "id": "optik",
+              "value": 2
+            },
+            {
+              "id": "tactik",
+              "value": 3
+            },
+            {
+              "id": "kinetik",
+              "value": 1
+            },
+            {
+              "id": "centrik",
+              "value": 4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q3",
+      "label": "Sweet Spot",
+      "question": "Where do you score from?",
+      "multiplier": 1,
+      "answers": [
+        {
+          "id": "q3a1",
+          "answer": "Goals from inside moves",
+          "answerDescriptive": "Inside moves",
+          "values": [
+            {
+              "id": "optik",
+              "value": 4
+            },
+            {
+              "id": "tactik",
+              "value": 3
+            },
+            {
+              "id": "kinetik",
+              "value": 2
+            },
+            {
+              "id": "centrik",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "id": "q3a2",
+          "answer": "Goals From outside shots",
+          "answerDescriptive": "Outside shots",
+          "values": [
+            {
+              "id": "optik",
+              "value": 2
+            },
+            {
+              "id": "tactik",
+              "value": 3
+            },
+            {
+              "id": "kinetik",
+              "value": 4
+            },
+            {
+              "id": "centrik",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "id": "q3a3",
+          "answer": "Crease goals from feeds",
+          "answerDescriptive": "Crease feeds",
+          "values": [
+            {
+              "id": "optik",
+              "value": 3
+            },
+            {
+              "id": "tactik",
+              "value": 4
+            },
+            {
+              "id": "kinetik",
+              "value": 2
+            },
+            {
+              "id": "centrik",
+              "value": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q4",
+      "label": "Dodging",
+      "question": "How do you dodge?",
+      "multiplier": 1,
+      "answers": [
+        {
+          "id": "q4a1",
+          "answer": "Speed dodge - one hand on the stick",
+          "answerDescriptive": "speed dodges",
+          "values": [
+            {
+              "id": "optik",
+              "value": 4
+            },
+            {
+              "id": "tactik",
+              "value": 3
+            },
+            {
+              "id": "kinetik",
+              "value": 2
+            },
+            {
+              "id": "centrik",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "id": "q4a2",
+          "answer": "Power dodge - two hands on the stick",
+          "answerDescriptive": "power dodges",
+          "values": [
+            {
+              "id": "optik",
+              "value": 1
+            },
+            {
+              "id": "tactik",
+              "value": 2
+            },
+            {
+              "id": "kinetik",
+              "value": 4
+            },
+            {
+              "id": "centrik",
+              "value": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q5",
+      "label": "Attack Preference",
+      "question": "Where do you attack from?",
+      "multiplier": 3,
+      "answers": [
+        {
+          "id": "q5a1",
+          "answer": "Attack from X",
+          "values": [
+            {
+              "id": "optik",
+              "value": 4
+            },
+            {
+              "id": "tactik",
+              "value": 3
+            },
+            {
+              "id": "kinetik",
+              "value": 2
+            },
+            {
+              "id": "centrik",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "id": "q5a2",
+          "answer": "Attack from the crease",
+          "values": [
+            {
+              "id": "optik",
+              "value": 2
+            },
+            {
+              "id": "tactik",
+              "value": 4
+            },
+            {
+              "id": "kinetik",
+              "value": 3
+            },
+            {
+              "id": "centrik",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "id": "q5a3",
+          "answer": "In motion throughout the offensive zone",
+          "values": [
+            {
+              "id": "optik",
+              "value": 3
+            },
+            {
+              "id": "tactik",
+              "value": 4
+            },
+            {
+              "id": "kinetik",
+              "value": 2
+            },
+            {
+              "id": "centrik",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "id": "q5a4",
+          "answer": "Attack from GLE",
+          "values": [
+            {
+              "id": "optik",
+              "value": 2
+            },
+            {
+              "id": "tactik",
+              "value": 3
+            },
+            {
+              "id": "kinetik",
+              "value": 4
+            },
+            {
+              "id": "centrik",
+              "value": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q6",
+      "label": "Tiebreaker",
+      "question": "What Position do you play?",
+      "multiplier": 1,
+      "answers": [
+        {
+          "id": "q6a1",
+          "answer": "Attack",
+          "values": [
+            {
+              "id": "optik",
+              "value": 4
+            },
+            {
+              "id": "tactik",
+              "value": 2
+            },
+            {
+              "id": "kinetik",
+              "value": 3
+            },
+            {
+              "id": "centrik",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "id": "q6a2",
+          "answer": "Midfield",
+          "values": [
+            {
+              "id": "optik",
+              "value": 1
+            },
+            {
+              "id": "tactik",
+              "value": 3
+            },
+            {
+              "id": "kinetik",
+              "value": 2
+            },
+            {
+              "id": "centrik",
+              "value": 4
+            }
+          ]
+        },
+        {
+          "id": "q6a3",
+          "answer": "Play both",
+          "values": [
+            {
+              "id": "optik",
+              "value": 2
+            },
+            {
+              "id": "tactik",
+              "value": 4
+            },
+            {
+              "id": "kinetik",
+              "value": 3
+            },
+            {
+              "id": "centrik",
+              "value": 1
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "products": [
+    {
+      "id": "kinetik",
+      "name": "Kinetik",
+      "shortDescription": "Designed for velocity and accuracy when the game is on the line.",
+      "description": "<p>The KINETIK is for a power player who isn't afraid to take the outside shot. Designed for a mid-high pocket delivering added power and consistent hold.</p><p>Optimal Release point Increases control with added hold and has extreme energy transfer when shooting.</p><p>Tension lock technology enables the stringer to precisely locate a defined shooting channel for increased accuracy.</p><p>Our Duratough material increases stiffness and provides consistency in all weather conditions.</p>",
+      "price": "$89.99",
+      "itemUrl": "http://maveriklacrosse.com/headfinder/kinetik-head",
+      "productImages": [
+        "products/kinetik/1_KINETIK_HEAD_WHITE_UNSTRUNG.jpg",
+        "products/kinetik/2_KINETIK_HEAD_WHITE_UNSTRUNG.jpg",
+        "products/kinetik/3_KINETIK_HEAD_WHITE_UNSTRUNG.jpg",
+        "products/kinetik/4_KINETIK_HEAD_WHITE_STRUNG.jpg",
+        "products/kinetik/joey_sankey_2.jpg"
+      ]
+    },
+    {
+      "id": "tactik",
+      "name": "Tactik",
+      "shortDescription": "Designed for inside finishers, speed dodging, and precision passing",
+      "description": "<p>The TACTIK featuring our OPTIMAL RELEASE POINT technology increases control with added hold and has extreme energy transfer when shooting. Designed for a mid-pocket delivering the perfect blend of power and accuracy.</p><p>Optimal Release point Increases control with added hold and has extreme energy transfer when shooting.</p><p>Our Duratough material increases stiffness and provides consistency in all weather conditions.</p>",
+      "price": "$89.99",
+      "itemUrl": "http://maveriklacrosse.com/headfinder/tactik-head",
+      "productImages": [
+        "products/tactik/1_TACTIK_HEAD_WHITE_UNSTRUNG.jpg",
+        "products/tactik/2_TACTIK_HEAD_WHITE_UNSTRUNG.jpg",
+        "products/tactik/3_TACTIK_HEAD_WHITE_UNSTRUNG.jpg",
+        "products/tactik/4_TACTIK_HEAD_WHITE_STRUNG.jpg",
+        "products/tactik/joe_walters.jpg"
+      ]
+    },
+    {
+      "id": "optik",
+      "name": "Optik",
+      "shortDescription": "Designed for the quarterback of the offensive.",
+      "description": "<p>The OPTIK is MAVERIK’s most refined and advanced offensive head. Designed for precision and accuracy without sacrificing power and strength. Designed for a low-mid pocket giving the player a quick and accurate release with added power.</p>",
+      "price": "$89.99",
+      "itemUrl": "http://maveriklacrosse.com/headfinder/optik-head",
+      "productImages": [
+        "products/optik/1_OPTIK_UNIVERSAL_HEAD_WHITE_UNSTRUNG.jpg",
+        "products/optik/2_OPTIK_UNIVERSAL_HEAD_WHITE_UNSTRUNG.jpg",
+        "products/optik/3_OPTIK_UNIVERSAL_HEAD_WHITE_UNSTRUNG.jpg",
+        "products/optik/4_OPTIK_UNIVERSAL_HEAD_WHITE_STRUNG.jpg",
+        "products/optik/jordan_wolf.jpg"
+      ]
+    },
+    {
+      "id": "centrik",
+      "name": "Centrik",
+      "shortDescription": "Designed for the elite two-way midfielder.",
+      "description": "<p>The CENTRIK was built to dominate both ends of the field. Engineered to deliver maximim velocity and control on the offensive and the strength needed to fight on defense. Designed for a mid-high pocket delivering added power and consistent hold.</p>",
+      "price": "$89.99",
+      "itemUrl": "http://maveriklacrosse.com/headfinder/centrik-head",
+      "productImages": [
+        "products/centrik/1_CENTRIK_UNIVERSAL_HEAD_WHITE_UNSTRUNG.jpg",
+        "products/centrik/2_CENTRIK_UNIVERSAL_HEAD_WHITE_UNSTRUNG.jpg",
+        "products/centrik/3_CENTRIK_UNIVERSAL_HEAD_WHITE_UNSTRUNG.jpg",
+        "products/centrik/4_CENTRIK_UNIVERSAL_HEAD_WHITE_STRUNG.jpg",
+        "products/centrik/cj_costabile.jpg"
+      ]
+    }
+  ]
+}

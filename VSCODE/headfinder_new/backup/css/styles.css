@@ -1,0 +1,64 @@
+body{
+  font-family: 'Asap', Arial, Helvetica, sans-serif;
+  color:white;
+  background:black url(//s3-us-west-2.amazonaws.com/s.cdpn.io/16327/texture_bg.jpg) no-repeat 50% 0px;
+  margin:3% 10% 0 10%;
+  overflow:hidden;
+}
+.logo {
+    position:absolute;
+}
+.box{
+    background-color: #88CE02;
+    color: black;
+    margin: 10px;
+    float: left;
+    padding: 20px;
+    border-radius: 5px;
+}
+.boxes, .logo, .puck{
+    position: absolute;
+}
+.text-box{
+    
+    width: 300px;
+    float: left;
+    padding: 20px;
+    padding-top: 100px;
+    color: lightgray;
+        
+}
+
+#nav {
+text-align:right;
+  margin:20px 10px;
+}
+#nav img {
+  text-align:center;
+  position: relative;
+  margin-right: 20px;
+ 
+}
+button {
+  padding: 10px;
+  margin-top: 10px;
+}
+
+button:nth-child(1){
+  margin-left:10px;
+}
+
+#slider{
+  width: 580px;
+  margin:10px auto;
+  
+}
+
+.ui-widget-content {
+  background-color:rgba(255, 255, 255, 0.2);
+}
+
+#buttons{
+    position: absolute; 
+    bottom: 0px; 
+}

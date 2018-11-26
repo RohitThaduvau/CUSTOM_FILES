@@ -1,0 +1,81 @@
+{
+  "products": [
+    {
+      "id": "kinetik",
+      "name": "Kinetik",
+      "shortDescription": "DESIGNED FOR SHOT VELOCITY AND ACCURACY",
+      "description": "<p>The KINETIK is for a power player who isn’t afraid to take the outside shot. Designed for velocity and accuracy when the game is on the line.</p>",
+      "price": "$89.99",
+      "itemUrl": "http://maveriklacrosse.com/headfinder/kinetik-head",
+      "productImages": [
+        "products/kinetik/1_KINETIK_HEAD_WHITE_UNSTRUNG.jpg",
+        "products/kinetik/2_KINETIK_HEAD_WHITE_UNSTRUNG.jpg",
+        "products/kinetik/3_KINETIK_HEAD_WHITE_UNSTRUNG.jpg",
+        "products/kinetik/4_KINETIK_HEAD_WHITE_STRUNG.jpg",
+        "products/kinetik/joey_sankey_2.jpg"
+      ]
+    },
+    {
+      "id": "tactik",
+      "name": "Tactik",
+      "shortDescription": "DESIGNED FOR INSIDE FINISHERS AND PRECISION PASSING",
+      "description": "<p>The TACTIK controls the offensive zone, balanced and always a threat to score or feed. Designed for inside finishers, speed dodging, and precision passing.</p>",
+      "price": "$89.99",
+      "itemUrl": "http://maveriklacrosse.com/headfinder/tactik-head",
+      "productImages": [
+        "products/tactik/1_TACTIK_HEAD_WHITE_UNSTRUNG.jpg",
+        "products/tactik/2_TACTIK_HEAD_WHITE_UNSTRUNG.jpg",
+        "products/tactik/3_TACTIK_HEAD_WHITE_UNSTRUNG.jpg",
+        "products/tactik/4_TACTIK_HEAD_WHITE_STRUNG.jpg",
+        "products/tactik/joe_walters.jpg"
+      ]
+    },
+    {
+      "id": "optik",
+      "name": "Optik 2.0",
+      "shortDescription": "DESIGNED FOR THE QUARTERBACK OR THE OFFENSE",
+      "description": "<p>The Optik 2.0 is designed for the elite attackman who initiates the offense. With the combination of a tighter face shape and tension lock, this head will improve your accuracy, control and velocity. Used by arguably the best dodging attackman of our generation; Team USA’s Jordan Wolf.</p>",
+      "price": "$89.99",
+      "itemUrl": "https://maveriklacrosse.com/product/optik-2-head/",
+      "productImages": [
+        "products/optik/1_OPTIK_UNIVERSAL_HEAD_WHITE_UNSTRUNG.jpg",
+        "products/optik/2_OPTIK_UNIVERSAL_HEAD_WHITE_UNSTRUNG.jpg",
+        "products/optik/3_OPTIK_UNIVERSAL_HEAD_WHITE_UNSTRUNG.jpg",
+        "products/optik/4_OPTIK_UNIVERSAL_HEAD_WHITE_STRUNG.jpg",
+        "products/optik/jordan_wolf.jpg"
+      ]
+    },
+    {
+      "id": "centrik",
+      "name": "Centrik",
+      "shortDescription": "Designed for the elite two-way midfielder.",
+      "description": "<p>The CENTRIK was built to dominate both ends of the field. Engineered to deliver maximim velocity and control on the offensive and the strength needed to fight on defense. Designed for a mid-high pocket delivering added power and consistent hold.</p>",
+      "price": "$89.99",
+      "itemUrl": "http://maveriklacrosse.com/headfinder/centrik-head",
+      "productImages": [
+        "products/centrik/1_CENTRIK_UNIVERSAL_HEAD_WHITE_UNSTRUNG.jpg",
+        "products/centrik/2_CENTRIK_UNIVERSAL_HEAD_WHITE_UNSTRUNG.jpg",
+        "products/centrik/3_CENTRIK_UNIVERSAL_HEAD_WHITE_UNSTRUNG.jpg",
+        "products/centrik/4_CENTRIK_UNIVERSAL_HEAD_WHITE_STRUNG.jpg",
+        "products/centrik/cj_costabile.jpg"
+      ]
+    },
+    {
+      "id": "havok",
+      "name": "havok",
+      "shortDescription": "DESIGNED FOR THE ELITE PLAYMAKING LSM/DEFENSEMAN",
+      "description": "<p>The all new Havok is designed for the elite playmaking LSM or Defenseman. With the best in class strength to weight ratio this head will deliver precise checks and increase caused turnovers. The all new Ground Control feature will ensure you dominate the GB battle.</p>",
+      "price": "$89.99",
+      "itemUrl": "http://maveriklacrosse.com/headfinder/centrik-head"
+    },
+    {
+      "id": "tank",
+      "name": "tank",
+      "shortDescription": "THE ULTIMATE DEFENSIVE MACHINE",
+      "description": "<p>The TANK is the ultimate defensive machine. Designed for power and durability, this head will deliver fierce checks and intercept passes effortlessly.</p>",
+      "price": "$89.99",
+      "itemUrl": "http://maveriklacrosse.com/headfinder/centrik-head"
+    }
+    
+  ]
+}

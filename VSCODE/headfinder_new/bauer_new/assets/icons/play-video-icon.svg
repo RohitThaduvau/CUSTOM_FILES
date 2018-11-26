@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="114px" height="114px" viewBox="0 0 114 114" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50 (54983) - http://www.bohemiancoding.com/sketch -->
+    <title>play-video-icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M0,2.07727778 L0,27.9227222 C0,28.2223889 0.085,28.5156111 0.25,28.7701667 C0.731666667,29.5273889 1.76,29.7626111 2.54333333,29.2937778 L24.19,16.3710556 C24.4116667,16.2389444 24.595,16.0601111 24.7333333,15.8458333 C25.2166667,15.0886111 24.9733333,14.0961667 24.19,13.6289444 L2.54333333,0.706222222 C2.28,0.548333333 1.975,0.466166667 1.66666667,0.466166667 C0.745,0.466166667 0,1.18633333 0,2.07727778 Z" id="path-1"></path>
+    </defs>
+    <g id="play-video-icon" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <circle id="Oval" stroke="#FFFFFF" stroke-width="4" fill-opacity="0.3" fill="#000000" cx="57" cy="57" r="55"></circle>
+        <g id="Page-1" transform="translate(48.000000, 42.000000)">
+            <g id="Group-3">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Clip-2"></g>
+                <polygon id="Fill-1" fill="#FFFFFF" mask="url(#mask-2)" points="-8.33333333 37.5893889 33.315 37.5893889 33.315 -7.58938889 -8.33333333 -7.58938889"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<q0:TrackRequest xmlns:q0="http://fedex.com/ws/track/v14" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://fedex.com/ws/track/v14 TrackService_v14.xsd ">
+  <q0:WebAuthenticationDetail>
+    <q0:UserCredential>
+      <q0:Key>XXXX</q0:Key>
+      <q0:Password>YYYY</q0:Password>
+    </q0:UserCredential>
+  </q0:WebAuthenticationDetail>
+  <q0:ClientDetail>
+    <q0:AccountNumber>000000000</q0:AccountNumber>
+    <q0:MeterNumber>9999999</q0:MeterNumber>
+  </q0:ClientDetail>
+  <q0:Version>
+    <q0:ServiceId>trck</q0:ServiceId>
+    <q0:Major>14</q0:Major>
+    <q0:Intermediate>0</q0:Intermediate>
+    <q0:Minor>0</q0:Minor>
+  </q0:Version>
+  <q0:SelectionDetails>
+    <q0:PackageIdentifier>
+      <q0:Type>TRACKING_NUMBER_OR_DOORTAG</q0:Type>
+      <q0:Value>771968929603</q0:Value>
+    </q0:PackageIdentifier>
+  </q0:SelectionDetails>
+</q0:TrackRequest>

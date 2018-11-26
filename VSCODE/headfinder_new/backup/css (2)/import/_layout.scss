@@ -1,0 +1,146 @@
+//  Interface
+
+.wrapper {
+  background-color: $black;
+
+  &--white {
+    background-color: $white;
+    @include pxl-clearfix();
+    border-top: 2px solid $primary-accent-color;
+    color: $secondary-color;
+  }
+}
+
+.content-wrapper {
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 0 auto;
+    max-width: 1440px;
+    min-height: 677px;
+
+    @include pxl-media($sm-view-up) {
+      background-size: cover;
+    }
+
+    @include pxl-media($md-view-up) {
+      min-height: 835px;
+    }
+  }
+
+  .content-inner {
+    margin: 0 auto;
+    max-width: 711px;
+    position: relative;
+    @include pxl-clearfix();
+  }
+
+  // Page min-height and max-width exceptions
+
+  .start .content-inner {
+    display: flex;
+    flex-direction: column;
+    min-height: 511px;
+    height: 511px;
+
+    @include pxl-media($md-view-up) {
+      height: 657px;
+      min-height: 657px;
+    }
+  }
+
+  .confirm .content-inner {
+    max-width: 370px;
+  }
+
+  .results .content-inner {
+    max-width: none;
+  }
+
+  // Start and Confirm Pages - Padding Exceptions
+
+  .start,
+  .confirm {
+    padding-top: 30px;
+    padding-right: 22px;
+    padding-bottom: 46px;
+    padding-left: 22px;
+    text-align: center;
+
+    @include pxl-media($md-view-up) {
+      padding-top: 50px;
+      padding-bottom: 106px;
+    }
+  }
+
+  // Header
+
+  .header {
+    background-color: $white;
+    text-align: center;
+
+    .content-inner {
+      padding: 15px 12px 12px;
+    }
+
+    h1 {
+      line-height: 0;
+      margin: 0;
+    }
+
+    &__return-link {
+      position: absolute;
+      left: 25px;
+      top: 18px;
+
+      @include pxl-media($md-view-up) {
+        left: 70px;
+      }
+    }
+  }
+
+// Footer
+
+.footer {
+  background-color: $primary-color;
+  padding: 20px 0;
+  text-align: center;
+
+  .content-inner {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__logo {
+    align-self: center;
+    display: inline-block;
+    flex-basis: 50%;
+    font-size: 0;
+    text-indent: -9000px;
+
+    &+ .footer__logo {
+      border-left: 1px solid $white;
+    }
+
+    &--cascade {
+      @include pxl-hide-text();
+      background-image: url('./assets/images/cascade-wings-logo.svg');
+      background-position: 100% 0;
+      background-repeat: no-repeat;
+      background-size: 145px 39px;
+      height: 39px;
+      width: 145px;
+      margin-right: 8px;
+    }
+
+    &--maverik {
+      @include pxl-hide-text();
+      background-image: url('./assets/images/maverik-circle-logo.svg');
+      background-position: 20px 0;
+      background-repeat: no-repeat;
+      background-size: 60px;
+      height: 60px;
+      width: 91px;
+    }
+  }
+}

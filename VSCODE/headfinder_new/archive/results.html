@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <link rel="stylesheet" href="css/fonts.css">
+        <!-- <link rel="stylesheet" href="css/styles.css"> -->
+        <link rel="stylesheet" href="css/results.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <title>Results!</title>
+    </head>
+    <body>
+        <div class="topbar">
+            <img src="assets/images/maverik-logo.svg" width="200">
+        </div>
+
+        <div class="container" style="padding-top: 30px;">
+        
+          <div class="row">
+            <div class="col-md-1 thumbs">
+
+            </div>
+            <div class="col-md-7 img-holder">
+              <img class="main_img" src="">
+            </div>
+            <div class="col-md-4">
+                <div id="stick_name">Kinetic</div>
+                <div class="results__byline">Is the perfect Head for the way you play!</div>
+        
+                <div class="product-description">
+                  <p class="short_desc">{{recommended Product short Description}}</p>
+                  <div class="long_desc">{{recommended Product description}}</div>
+                </div>
+
+                <div class="results_price">$88.99 MSRP.</div>
+                <div id="get_one_button"><a class="prod_link" href="#" target="_blank">GET ONE!</a></div>
+                <div class="related-product">
+                  <!-- <p><hr></p> -->
+                  <p class="related-product_intro">You might also like</p>
+
+                  <p class="related-product_name">Tactik</h2>
+
+                  <p>Designed for velocity and accuracy when the game is on the line.</p>
+
+                </div>
+            </div>
+          </div>
+          <div class="row">
+            <p><hr></p>
+          </div>
+          <div class="row">
+            <div class="col-sm-12 col-md-4">
+              <div class="store_box">
+                <a href=""><img src="assets/images/stores/1.jpg"></a>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-4">
+              <div class="store_box">
+                <a href=""><img src="assets/images/stores/2.jpg"></a>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-4">
+                <div class="store_box">
+                  <a href=""><img src="assets/images/stores/3.png"></a>
+                </div>
+            </div>
+          </div>
+          <div class="row mb-5">
+            <div class="col-sm-12 col-md-4">
+                <div class="store_box">
+                  <a href=""><img src="assets/images/stores/4.jpg"></a>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4">
+                <div class="store_box">
+                  <a href=""><img src="assets/images/stores/5.png"></a>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4">
+                <div class="store_box">
+                  <a href=""><img src="assets/images/stores/6.jpg"></a>
+                </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bottombar">
+                <img src="assets/images/maverik-circle-logo.svg" width="60"> 
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js?r=9009"></script>
+        <script src="js/greensock/minified/utils/SplitText.min.js"></script>
+        <script src="js/results.js"></script>
+        <script>
+          //
+          
+          //
+
+          $(function() {
+            
+            var path = window.location.href;
+
+            var res = path.split("results.html");
+
+            var folder = 'headfinder_new/';
+
+            var temp = path.split("stick=");
+            
+
+            var stick = temp[1];
+
+            console.log(stick);
+
+            $("#stick_name").html(stick);
+
+            var stickText = new SplitText("#stick_name", {type:"chars"});
+
+            TweenMax.staggerFrom(stickText.chars, 0.8, {ease:Back.easeOut, x:300, opacity:0}, 0.02)
+
+            TweenMax.from("#get_one_button", 1.5, {ease:Back.easeOut, opacity:0, width:150});
+
+            var dir = res[0] + "assets/images/products/" + stick + "/";
+            var fileextension = ".jpg";
+
+            $.ajax({
+              //This will retrieve the contents of the folder if the folder is configured as 'browsable'
+              url: dir,
+              success: function (data) {
+                console.log
+                //$(data).find("a:contains(" + fileextension + ")").each(function () {
+                  var i = 0;  
+                  $(data).find("a:contains(" + "." + ")").each(function () {
+                
+                    var filename = this.href.replace(window.location.host, "").replace("http://", "").replace("http://", "").replace(folder, "");
+                    
+                    console.log(filename);
+
+                    $(".thumbs").append("<img class='img_tb' src='" + dir + filename + "'>");
+                    if(i == 0){
+                      $(".main_img").attr('src', dir + filename);
+                      
+                      $i=1;
+                    }
+
+                  });
+                TweenMax.staggerFrom(".img_tb", 0.5, {ease:Back.easeOut, opacity:0, y:200, delay:0.5}, 0.2);
+              }
+            });
+
+            // t1.staggerFrom(".thumbs img", 0.5, {opacity: 0, y: 1000, scale:2, delay:0.5});
+
+            $(document).on("click",".thumbs img", function(){
+                //console.log("here");
+                var src_img = $(this).attr("src");
+                //console.log(src_img);
+                $(".main_img").attr("src", src_img);
+            });
+
+            $.get("js/products.json", function(data) {
+              $.each(data.products, function( key, val ) {
+                if(val.id  == stick){
+                  $(".short_desc").html(val.shortDescription);
+                  $(".long_desc").html(val.description);   
+                  //               
+                  $(".prod_link").attr("href", val.itemUrl);
+                }
+              });                
+            });
+
+          });
+          
+          // var tl = new TimelineMax();
+          // t1.to(".topbar", 6, {x:6000});
+
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>        
+
+    </body>
+</html>

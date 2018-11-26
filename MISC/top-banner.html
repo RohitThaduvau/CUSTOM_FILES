@@ -1,0 +1,205 @@
+<style>
+    .message-banner__container {
+        display: flex;
+    }
+    .message-banner__item__img-container {
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        z-index: 2;
+        overflow: hidden;
+        box-shadow: inset 0px 12px 8px -12px #000;
+    }
+    .message-banner__item__img-container img {
+        padding: 0 2rem;
+    }
+    .message-banner__item-1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-grow: 0;
+        justify-content: space-around;
+        text-align: center;
+        width: 50%;
+        background: #009cda;
+    }
+    .message-banner__item-1:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 50%;
+        border-bottom: 80px solid #8b2148;
+        border-left: 80px solid #009cda;
+        width: 0;
+    }
+    .message-banner__item__link {
+        /* padding: 1rem; */
+        z-index: 2;
+    }
+    .message-banner__item-2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-grow: 0;
+        width: 50%;
+        background-color: #8b2148;
+    }
+    .message-banner__item__sub-container {
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+    .message-banner__item__sub-container-item {
+        flex: 1;
+    }
+    .message-banner__item__heading h2 {
+        color: #fff;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        font-family: akzidenz-grotesk-pro-condens;
+        font-size: 1.5rem;
+        text-align: center;
+        padding: 0 1rem;
+        margin: 0;
+    }
+    .message-banner__item__tag-line span {
+        color: #fff;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        font-family: akzidenz-grotesk-pro-condens;
+        font-size: 1.0rem;
+    }
+    .count-down-clock__container {
+        color: #fff;
+        display: flex;
+        flex: 1;
+        justify-content: space-evenly;
+        font-weight: 100;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+    .count-down-clock__container span {
+        color: #fff;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        font-family: akzidenz-grotesk-pro-condens;
+        font-size: 1.5rem;
+    }
+    .count-down-clock__item {
+        padding: 0 1rem;
+    }
+    .count-down-clock__smalltext {
+        color: #fff;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        font-family: akzidenz-grotesk-pro-condens;
+        font-size: 0.75rem;
+    }
+    @media only screen and (max-width: 63.75em) {
+        .message-banner__item-1 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            flex-grow: 0;
+            width: 100%;
+        }
+        .message-banner__item-1:after {
+            content: '';
+            display: none;
+        }
+        .message-banner__item-2 {
+            display: none;
+        }
+    }
+</style>
+
+<section class="message-banner__container">
+    <div id="top-banner-1" class="message-banner__item-container message-banner__item-1">
+        <div class="message-banner__item__img-container">
+            <img v-for="n in starsCount" :key="n" src="http://bauer.a.bigcontent.io/v1/static/snowflakes_1" class="message-banner__item__img" alt="">
+            <img v-for="n in starsCount" :key="n" src="http://bauer.a.bigcontent.io/v1/static/snowflakes_1" class="message-banner__item__img" alt="">
+            <img v-for="n in starsCount" :key="n" src="http://bauer.a.bigcontent.io/v1/static/snowflakes_1" class="message-banner__item__img" alt="">
+            <img v-for="n in starsCount" :key="n" src="http://bauer.a.bigcontent.io/v1/static/snowflakes_1" class="message-banner__item__img" alt="">
+        </div>
+        <a href="" class="message-banner__item__link">
+            <div class="message-banner__item__heading">
+                <h2>the game is a gift</h2>
+            </div>
+            <div class="message-banner__item__tag-line">
+                <span>holiday 2018 | a guide to holiday gift giving</span>
+            </div>
+        </a>
+    </div>
+    <div id="top-banner-2" class="message-banner__item-container message-banner__item-2">
+        <div class="message-banner__item__img-container">
+            <img v-for="n in starsCount" :key="n" src="http://bauer.a.bigcontent.io/v1/static/snowflakes_1" class="message-banner__item__img" alt="">
+            <img v-for="n in starsCount" :key="n" src="http://bauer.a.bigcontent.io/v1/static/snowflakes_1" class="message-banner__item__img" alt="">
+            <img v-for="n in starsCount" :key="n" src="http://bauer.a.bigcontent.io/v1/static/snowflakes_1" class="message-banner__item__img" alt="">
+            <img v-for="n in starsCount" :key="n" src="http://bauer.a.bigcontent.io/v1/static/snowflakes_1" class="message-banner__item__img" alt="">
+        </div>
+        <div class="message-banner__item__sub-container">
+            <div id="count-down-clock" class="count-down-clock__container">
+                <div class="count-down-clock__item">
+                    <span class="count-down-clock__days"></span>
+                    <div class="count-down-clock__smalltext">Days</div>
+                </div>
+                <div class="count-down-clock__item">
+                    <span class="count-down-clock__hours"></span>
+                    <div class="count-down-clock__smalltext">Hours</div>
+                </div>
+                <div class="count-down-clock__item">
+                    <span class="count-down-clock__minutes"></span>
+                    <div class="count-down-clock__smalltext">Minutes</div>
+                </div>
+                <div class="count-down-clock__item">
+                    <span class="count-down-clock__seconds"></span>
+                    <div class="count-down-clock__smalltext">Seconds</div>
+                </div>
+            </div>
+            <div class="message-banner__item__heading message-banner__item__sub-container-item">
+                <span>countdown to christmas delivery</span>
+            </div>
+        </div>
+    </div>
+</section> 
+
+<script>
+    function getTimeRemaining(endtime) {
+        var t = Date.parse(endtime) - Date.parse(new Date());
+        var seconds = Math.floor((t / 1000) % 60);
+        var minutes = Math.floor((t / 1000 / 60) % 60);
+        var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+        var days = Math.floor(t / (1000 * 60 * 60 * 24));
+        return {
+            'total': t,
+            'days': days,
+            'hours': hours,
+            'minutes': minutes,
+            'seconds': seconds
+        };
+    }
+    function initializeClock(id, endtime) {
+        var clock = document.getElementById(id);
+        var daysSpan = clock.querySelector('.count-down-clock__days');
+        var hoursSpan = clock.querySelector('.count-down-clock__hours');
+        var minutesSpan = clock.querySelector('.count-down-clock__minutes');
+        var secondsSpan = clock.querySelector('.count-down-clock__seconds');
+        var _this = this;
+        function updateClock() {
+            var t = _this.getTimeRemaining(endtime);
+
+            daysSpan.innerHTML = t.days;
+            hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
+            minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
+            secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
+
+            if (t.total <= 0) {
+                clearInterval(timeinterval);
+            }
+        }
+        updateClock();
+        var timeinterval = setInterval(updateClock, 1000);
+    }
+    var deadline = new Date('Tue Dec 18 2018 12:00:00 GMT-0500 (Eastern Standard Time)');
+    initializeClock('count-down-clock', deadline);
+</script>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="35px" height="22px" viewBox="0 0 35 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50 (54983) - http://www.bohemiancoding.com/sketch -->
+    <title>cart-icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="cart-icon" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-16" transform="translate(1.000000, 1.000000)" stroke-width="0.715">
+            <g id="Page-1" transform="translate(8.755102, 0.000000)" stroke="#020303">
+                <polyline id="Stroke-1" points="-8.65889213e-05 0 5.14805773 0 8.58910146 16.23 21.2869338 16.23"></polyline>
+                <polyline id="Stroke-4" points="7.29507332 11.2492083 21.8511039 11.2492083 24.1851083 1.287125"></polyline>
+                <path d="M9.23596399,19.9658333 C10.3079348,19.9658333 11.1768547,19.1291667 11.1768547,18.0979167 C11.1768547,17.06625 10.3079348,16.23 9.23596399,16.23 C8.16399315,16.23 7.29507332,17.06625 7.29507332,18.0979167 C7.29507332,19.1291667 8.16399315,19.9658333 9.23596399,19.9658333 Z" id="Stroke-6"></path>
+                <path d="M20.8808318,19.9658333 C21.9528026,19.9658333 22.8217224,19.1291667 22.8217224,18.0979167 C22.8217224,17.06625 21.9528026,16.23 20.8808318,16.23 C19.8088609,16.23 18.9399411,17.06625 18.9399411,18.0979167 C18.9399411,19.1291667 19.8088609,19.9658333 20.8808318,19.9658333 Z" id="Stroke-8"></path>
+            </g>
+            <path d="M12.4591837,3 L5.7244898,3" id="Line-21" stroke="#000000" stroke-linecap="square"></path>
+            <path d="M12.4591837,6.33333333 L3.03061224,6.33333333" id="Line-21-Copy" stroke="#000000" stroke-linecap="square"></path>
+            <path d="M12.4591837,9.66666667 L0.336734694,9.66666667" id="Line-21-Copy-2" stroke="#000000" stroke-linecap="square"></path>
+        </g>
+    </g>
+</svg>

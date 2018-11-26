@@ -1,0 +1,31 @@
+body{
+  background-color:#333;
+  margin:0;
+}
+
+#container{
+  background-color:black;
+  width:840px;
+  height:400px;
+}
+
+#logo{
+  position:absolute;
+  left:805px;
+  top:335px;
+  z-index:1;
+}
+
+#slider{
+position:relative;  
+width:600px;
+top:20px;  
+left:25px;
+}
+
+.ui-slider .ui-slider-handle { 
+  width: 40px !important; 
+  margin-left: -20px !important; 
+  height:40px !important; 
+  margin-top:-10px !important;
+}

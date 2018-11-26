@@ -1,0 +1,371 @@
+body {
+	background-color:white;
+	color: #FFF;
+	font-family: "TradeGothicLTStd";
+	font-size: 26px;
+	margin: 0;
+	padding: 0;
+}
+.topbar {
+    overflow: hidden;
+    background-color: white;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    text-align: center;
+    height: 50px;
+    padding: 10px 0 0 0;
+    border-bottom: 2px solid #c8102e;;
+  }
+  
+  .bottombar img, .topbar img{
+    display: inline-block;
+    margin: 0 auto;
+    margin-left: -50px; 
+  
+  }
+  .bottombar img{
+    padding: 10px 20px 20px 50px;
+  }
+  .bottombar{
+    overflow: hidden;
+    background-color: gray;
+    position: fixed; /* Set the navbar to fixed position */
+    bottom: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    text-align: center;
+    height: 50px;
+    padding: 10px 0px 0px 0px;
+  }
+* {
+	box-sizing: border-box;
+}
+
+img {
+	max-width: 100%;
+}
+
+h2 {
+	font-family: "TradeGothicLTStd-BdCn20";
+	font-size: 36px;
+	margin-top: 0;
+}
+
+@media screen and (min-width: 1024px) {
+	h2 {
+		font-size: 60px;
+	}
+}
+
+a, a:link {
+	color: #CCC;
+	font-size: 20px;
+	text-decoration: none;
+}
+
+a.return-link, a:link.return-link {
+	border-bottom: 1px solid #CCC;
+	display: inline-block;
+	margin-top: 30px;
+	padding-bottom: 3px;
+}
+
+.btn, .btn:link {
+	background-color: #c8102e;
+	color: #FFF;
+	display: inline-block;
+	font-family: "TradeGothicLTStd-BdCn20";
+	font-size: 24px;
+	min-width: 332px;
+	padding: 25px 21px 18px;
+	text-align: center;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+.btn--start {
+	align-self: flex-end;
+	margin: auto auto 0 auto;
+}
+
+.results {
+	padding-top: 30px;
+	padding-right: 22px;
+	padding-left: 22px;
+	text-align: left;
+}
+
+@media screen and (min-width: 1024px) {
+	.results {
+		display: block;
+		flex-direction: row;
+		max-width: 1280px;
+		padding-top: 50px;
+		padding-bottom: 106px;
+	}
+}
+
+@media screen and (min-width: 1240px) {
+	.results {
+		padding-right: 100px;
+	}
+}
+
+.results .content-inner {
+	display: flex;
+	flex-direction: column;
+}
+
+@media screen and (min-width: 1024px) {
+	.results .content-inner {
+		display: block;
+	}
+}
+
+.results .content-inner div:first-of-type {
+	order: 2;
+}
+
+.results__carousel {
+	order: 2;
+}
+
+@media screen and (min-width: 1024px) {
+	.results__carousel {
+		float: left;
+		margin-right: 30px;
+		order: initial;
+	}
+}
+
+@media screen and (min-width: 1240px) {
+	.results__carousel {
+		margin-right: 113px;
+	}
+}
+
+.results__carousel .VueCarousel-slide {
+	text-align: center;
+}
+
+.results__carousel .VueCarousel-dot.VueCarousel-dot--active .VueCarousel-dot-inner {
+	background-color: #FFF !important;
+	border: 1px solid #c8102e;
+}
+
+@media screen and (min-width: 1024px) {
+	.results__carousel__feature-image {
+		border: 1px solid #D8D8D8;
+		float: left;
+		width: 467px;
+	}
+}
+
+@media screen and (min-width: 1240px) {
+	.results__carousel__feature-image {
+		width: auto;
+	}
+}
+
+.results__carousel__images__thumbs {
+	float: left;
+	list-style: none;
+	margin: 0 26px 0 0;
+	padding: 0;
+}
+
+.results__carousel__images__thumbs li {
+	margin-bottom: 29px;
+}
+
+.results__carousel__images__thumbs img {
+	border: 1px solid #D8D8D8;
+	display: block;
+	height: auto;
+	width: 75px;
+}
+
+.results__carousel__images__thumbs img.selected {
+	border-color: #c8102e;
+}
+
+.results__product-name {
+	color: #c8102e;
+	order: 1;
+	font-family: "VenusRising";
+	font-size: 36px;
+	margin-bottom: 8px;
+}
+
+@media screen and (min-width: 1024px) {
+	.results__product-name {
+		font-size: 40px;
+		margin-bottom: 0;
+	}
+}
+
+@media screen and (min-width: 1240px) {
+	/* .results__product-name {
+		font-size: 50px;
+		margin-top: 50px;
+	} */
+}
+
+.results__byline {
+	color: #201d1d;
+	display: block;
+	font-family: "TradeGothicLTStd";
+	font-size: 20px;
+	font-weight: normal;
+	margin-top: 5px;
+}
+
+.results__product-description {
+	color: #808080;
+	font-size: 16px;
+	line-height: 1.38;
+	order: 3;
+}
+
+@media screen and (min-width: 1024px) {
+	.results__product-description {
+		display: flex;
+		flex-direction: column;
+		line-height: 22px;
+	}
+}
+
+.results__product-description__intro {
+	color: #201d1d;
+	display: block;
+	font-family: "TradeGothicLTStd";
+	font-size: 20px;
+	margin-bottom: 0;
+}
+
+.results__purchase-options {
+	color: #FFF;
+	display: flex;
+	font-size: 30px;
+	margin-left: -22px;
+	margin-right: -22px;
+	order: 5;
+	-webkit-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+}
+
+.results__purchase-options.is-sticky {
+	bottom: 0;
+	position: fixed;
+	width: 100%;
+	z-index: 100;
+}
+
+@media screen and (min-width: 376px) {
+	.results__purchase-options.is-sticky {
+		position: initial;
+		width: auto;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.results__purchase-options {
+		display: flex;
+		margin-bottom: 35px;
+		margin-left: 0;
+		margin-right: 0;
+	}
+}
+
+@media screen and (min-width: 1240px) {
+	.results__purchase-options {
+		margin-top: 35px;
+	}
+}
+
+.results__purchase-options__price {
+	background-color: #e21743;
+	flex-basis: 50%;
+	font-family: "TradeGothicLTStd-BdCn20";
+	padding: 14px 17px 10px;
+	text-align: center;
+}
+
+@media screen and (min-width: 1024px) {
+	.results__purchase-options__price {
+		flex-basis: 173px;
+	}
+}
+
+.results__purchase-options__price__label {
+	font-family: "TradeGothicLTStd";
+	font-size: 20px;
+	margin-left: 8px;
+}
+
+.results__purchase-options__link {
+	background-color: #c8102e;
+	flex-basis: 50%;
+	font-family: "TradeGothicLTStd-BdCn20";
+	text-align: center;
+}
+
+@media screen and (min-width: 1024px) {
+	.results__purchase-options__link {
+		flex-basis: 173px;
+	}
+}
+
+.results__purchase-options__link a {
+	color: #FFF;
+	display: block;
+	font-size: 30px;
+	text-decoration: none;
+	padding: 14px 0 10px;
+}
+
+.results__related-product {
+	order: 4;
+}
+
+@media screen and (min-width: 1024px) {
+	.results__related-product {
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+.results__related-product__intro {
+	border-top: 2px solid #c8102e;
+	border-bottom: 2px solid #c8102e;
+	font-size: 20px;
+	padding: 6px 0 1px;
+	text-align: center;
+}
+
+.results__related-product__name {
+	font-family: "VenusRising";
+	font-size: 20px;
+	margin-bottom: 0;
+}
+
+.results__related-product__description {
+	font-size: 20px;
+}
+
+@media screen and (min-width: 1024px) {
+	.results__related-product__description {
+		font-size: 16px;
+	}
+}
+
+.img-holder img{
+
+ border: 1px solid lightgrey;
+}
+
+.thumbs img{
+    width: 50px;
+    margin: 0 0 20px;
+    border: 1px solid lightgrey;
+}

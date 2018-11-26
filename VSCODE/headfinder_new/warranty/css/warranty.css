@@ -1,0 +1,170 @@
+@font-face {
+    font-family: "Akzidenz-Grotesk BQ";
+    src: url("../assets/fonts/Akzidenz_Grotesk_Pro_Cnd_Regular.otf") format("opentype");
+}
+@font-face {
+    font-family: "Akzidenz-Grotesk BQ";
+    src: url("../assets/fonts/Akzidenz_Grotesk_Pro_Bold_Cnd_Regular.otf") format("opentype");
+    font-weight: bold;
+}
+@font-face {
+    font-family: "Akzidenz-Grotesk BQ";
+    src: url("../assets/fonts/Akzidenz_Grotesk_Pro_Bold_Cnd_Italic.otf") format("opentype");
+    font-weight: bold;
+    font-style: italic, oblique;
+}
+
+/* LIGHT*/
+@font-face {
+    font-family: "Akzidenz-Grotesk BQ Light";
+    src: url("../assets/fonts/Akzidenz_Grotesk_Pro_Light_Cnd_Regular.otf") format("opentype");
+}
+
+body, html{
+    overflow-x: hidden; 
+    color: gray;	
+    font-family: Roboto;	
+    font-size: 14px;	
+    font-weight: 300;	
+    letter-spacing: 0.32px;	
+    line-height: 19px;
+    background-color: #F3F4F5;
+}
+.container{
+    background-color: white;
+}
+
+nav {
+    border-bottom: 1px solid lightgrey; 
+    background-color:white;
+}
+
+input[type=text], input[type=email], input[type=password], input[type=select] , #quantity  {
+
+    padding: 6px;
+    border: 1px solid #9B9B9B;	
+    border-radius: 2px;	
+    background-color: #F3F4F5;
+    color: black;	
+    font-family: "Akzidenz-Grotesk BQ";
+    font-size: 24px;
+    letter-spacing: 0.6px;
+}
+
+body ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: blue;
+    opacity: 1; /* Firefox */
+    font-family: "Akzidenz-Grotesk BQ";	 
+    font-size: 18px;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: lightblue;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: lightblue;
+}
+
+/*
+ Drop down content
+*/
+.custom-select {
+    text-align: left; 
+    background-color: #F3F4F5; 
+    color: black; 
+    width: 100%;
+}
+.containercheck {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.containercheck input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.containercheck:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.containercheck input:checked ~ .checkmark {
+    background-color: #2196F3;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.containercheck input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.containercheck .checkmark:after {
+ 	top: 9px;
+	left: 9px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: white;
+}
+
+select {
+    font-family: 'Akzidenz-Grotesk BQ';
+    padding: 30px;
+    height: 40px;
+
+}
+.heading-1 {
+
+    color: #131415;
+    font-family: 'Akzidenz-Grotesk BQ';
+    font-size: 24px;
+    letter-spacing: 0.5px;
+    line-height: 26px;
+    
+}
+
+.bottom-text, #top-text{
+
+    color: #000000;
+    font-family: "Akzidenz-Grotesk BQ";
+    font-weight: bold;
+    font-size: 34px;
+    line-height: 30px;
+    text-align: center;
+
+}
+
+#top-text{
+    font-size: 24px; 
+}

@@ -1,0 +1,398 @@
+<style>
+        /* Create four equal columns that sits next to each other */
+        .row.collage {
+            background-color: #fff !important;
+        }
+        .collage .column {
+            -ms-flex: 20%; /* IE10 */
+            flex: 20%;
+            max-width: 20%;
+        }
+        .row.collage .shop-link{
+            cursor: pointer;
+            overflow: hidden;
+        }
+        .collage .column.wide {
+            -ms-flex: 40%; /* IE10 */
+            flex: 40%;
+            max-width: 40%;
+        }
+        .collage .column.inner {
+            max-width: 50%;
+            }
+        
+            .collage  .collage-tile .c-product-tile__info {
+            font-family:  "akzidenz-grotesk-pro-condens", sans-serif;
+            position: absolute;
+            background-color: #000;
+            opacity: 0.6;
+            margin-top: -148px;
+            margin-left: 4px;
+            padding: 10px;
+            display: none;
+            /* transition: transform .5s ease-out; */
+            transition: all 1s;
+            -webkit-transition: all 1s;
+        }
+            .collage-tile .c-product-tile__product-name-link,
+            .collage-tile .c-product-tile__price {
+                color: #fff;
+                font-size: 18px;
+                letter-spacing: 1.2px;
+                font-weight: normal;
+            }
+            .collage-tile .c-product-tile__product-name-link {
+                font-size: 22px;
+                font-weight: 600;
+            }
+            .collage .c-banners__button.c-button.c-button--secondary-outline {
+                color: #fff;
+                border-color: #fff;
+            }
+            .collage-tile .c-banners__button {
+                margin-left: 0;
+            }
+        /* .collage .column.wide.left img {
+            transform: translate(0px, 0px) rotate(0deg) scale(1, 1);
+            transform: translate(-25px, 0px) rotate(0deg) scale(1, 1);
+        } */
+        
+        .collage .column img {
+            margin: -3px;
+        }
+        .collage .show-more,
+        .collage .show-less {
+            display: none;
+        }
+        .c-banners__header-block.sale_block {
+            position: absolute;
+            margin-top: -40%;
+            max-width: 450px;
+            padding-right: 100px;
+        }
+        .shop-collage-image::before {
+            content: "";
+            display: none;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: rgba(52, 73, 94, 0.75);
+        }
+        .row.collage .shop-link:hover img:before {
+            display: inline-block;
+            opacity: 0.8;
+        }
+    
+         @media screen and (min-width: 1021px) {
+            .row.collage .shop-link img {
+                -webkit-transition: transform 0.3s ease;
+                -moz-transition: transform 0.3s ease;
+                transition: transform 0.3s ease;
+            }
+            .row.collage .shop-link:hover img {
+                -moz-transform: scale(1.2);
+                -webkit-transform: scale(1.2);
+                transform: scale(1.2)
+            }
+         }
+        
+        /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 1020px) {
+            .collage .column,
+            .collage .column.wide {
+                -ms-flex: 100%;
+                flex: 100%;
+                max-width: 100%;
+            }
+            .row.collage .collage-tile .c-product-tile__info {
+                position: relative;
+                display: block;
+                background-color: #fff;
+                margin: 20px 0 40px;
+                opacity: 1;
+                text-align: center;
+            }
+            .collage-tile .c-product-tile__product-name-link,
+            .collage-tile .c-product-tile__price {
+                color: #000;
+            }
+            .collage .c-banners__button.c-button.c-button--secondary-outline {
+                color: #000;
+                border-color: #000;
+                max-width: 250px;
+                padding: 5px;
+            }
+            .collage .show-more,
+            .collage .show-less {
+                margin: 0 auto;
+                text-align: center;
+                display: block;
+                cursor: pointer;
+            }
+            .collage .mobile-hide {
+                display: none;
+            }
+            .c-banners__header-block.sale_block {
+                margin-top: -96%;
+            }
+        }
+    </style>
+    <body>
+        
+        <!-- Photo Grid -->
+        <div class="row collage"> 
+            <div class="column wide left">
+            <div class="collage-tile shop-link" id="shop-order-2-pre" data-link="$url('Search-Show','cgid','Sticks-Supreme')$">
+                <img src="https://i1.adis.ws/i/bauer/1S_stick_sale_grid_image" style="width:100%;" class="shop-collage-image">
+                <div class="c-banners__header-block c-banners__header-block--bg-color c-banners--50 c-banners--left u-text-left sale_block">
+                    <img class="c-banners__logo u-margin-bottom-md" src="https://bauer.a.bigcontent.io/v1/static/OnSaleNow?h=75">
+                    <div class="c-banners__description u-margin-bottom-xs" style="color: #000;">ALL 2017 SUPREME PLAYER STICKS</div>
+                    <div class="c-banners__title" style="color: #000;">20% OFF</div>
+                    <div class="c-banners__text amp-ca-text" style="color: #000;"><p>While supplies last. Some restrictions may apply. Offer is not valid on current Bauer product.</p></div>
+                    <div class="c-banners__button-row">
+                    <a class="c-banners__button c-button" style="background-color: #000;color: #fff;
+                        " href="$url('Search-Show','cgid','Sticks-Supreme')$">
+                        Shop Supreme Sticks
+                    </a>
+                    </div>
+                </div>
+                <!-- <img src="https://i1.adis.ws/i/bauer/648720_03_1" style="width:100%"> -->
+            </div>
+            <div class="row" id="shop-order-2">
+                <div class="column inner shop-link" data-link="$url('Product-Show','pid','643253')$">
+                    <div class="collage-tile">
+                        <img src="https://i1.adis.ws/i/bauer/643253_Nexus_2N_macro" class="shop-collage-image" style="width:100%">
+                        <div class="c-product-tile__info">    
+                            <div class="c-product-tile__product-name product-name">
+                                <a class="c-product-tile__product-name-link name-link" href="$url('Product-Show','pid','643253')$" title="Go to Product: VAPOR 1X Skate">
+                                NEXUS 2N Skate
+                                </a>
+                            </div>
+                            <div class="c-product-tile__price product-pricing">
+                                <span class="product-sales-price" title="Sale Price">$449.99 - $699.99</span>
+                                <span class="product-sales-price cad-price" title="Sale Price">C $499.99 - C $799.99</span>  
+                            </div>
+                            <a class="c-banners__button c-button c-button--secondary-outline" href="$url('Product-Show','pid','643253')$">
+                                SHOP NOW
+                            </a>
+                        </div>
+                        <!-- <img src="https://i1.adis.ws/i/bauer/643253_Nexus_2N_macro" style="width:100%"> -->
+                    </div>
+                </div>
+                <div class="column inner shop-link" data-link="$url('Product-Show','pid','611485')$">
+                    <div class="collage-tile">
+                        <img src="https://i1.adis.ws/i/bauer/2S_Pro_Goalie_Pads" class="shop-collage-image" style="width:100%">
+                        <div class="c-product-tile__info">    
+                            <div class="c-product-tile__product-name product-name">
+                                <a class="c-product-tile__product-name-link name-link" href="$url('Product-Show','pid','611485')$" title="Go to Product: VAPOR 1X Skate">
+                                2S PRO Goal Pad
+                                </a>
+                            </div>
+                            <div class="c-product-tile__price product-pricing">
+                                <span class="product-sales-price" title="Sale Price">N/A</span> 
+                                <span class="product-sales-price cad-price" title="Sale Price">N/A</span> 
+                            </div>
+                            <a class="c-banners__button c-button c-button--secondary-outline" href="$url('Product-Show','pid','611485')$">
+                                SHOP NOW
+                            </a>
+                        </div>
+                        <!-- <img src="https://i1.adis.ws/i/bauer/2S_Pro_Goalie_Pads" style="width:100%"> -->
+                    </div>
+                </div>
+            </div>
+            </div>
+            <span class="show-more">
+                <p>SHOW MORE</p>
+                <img src="https://bauer.a.bigcontent.io/v1/static/icon-chevron" alt="more" />
+            </span>
+            <div class="column mobile-hide">
+            <div class="collage-tile shop-link" data-link="$url('Product-Show','pid','650043')$">
+                <img src="https://i1.adis.ws/i/bauer/650043_05_1" class="shop-collage-image" style="width:100%">
+                <div class="c-product-tile__info">    
+                    <div class="c-product-tile__product-name product-name">
+                        <a class="c-product-tile__product-name-link name-link" href="$url('Product-Show','pid','650043')$" title="Go to Product: VAPOR 1X Skate">
+                        NEXUS 2N PRO Stick  
+                        </a>
+                    </div>
+                    <div class="c-product-tile__price product-pricing">
+                        <span class="product-sales-price" title="Sale Price">$99.99 - $279.99</span>
+                        <span class="product-sales-price cad-price" title="Sale Price">C $109.99 - C $319.99</span>  
+                    </div>
+                    <a class="c-banners__button c-button c-button--secondary-outline" href="$url('Product-Show','pid','650043')$">
+                        SHOP NOW
+                    </a>
+                </div>
+                <!-- <img src="https://i1.adis.ws/i/bauer/648720_03_1" style="width:100%"> -->
+            </div>
+            <div class="collage-tile shop-link" data-link="$url('Product-Show','pid','611714')$">
+                <img src="https://i1.adis.ws/i/bauer/reakt-blue-helmet_2" class="shop-collage-image" style="width:100%">
+                <div class="c-product-tile__info">    
+                    <div class="c-product-tile__product-name product-name">
+                        <a class="c-product-tile__product-name-link name-link" href="$url('Product-Show','pid','611714')$" title="Go to Product: VAPOR 1X Skate">
+                        RE-AKT 95 HELMET
+                        </a>
+                    </div>
+                    <div class="c-product-tile__price product-pricing">
+                        <span class="product-sales-price" title="Sale Price">$159.99</span> 
+                        <span class="product-sales-price cad-price" title="Sale Price">C $189.99</span> 
+                    </div>
+                    <a class="c-banners__button c-button c-button--secondary-outline" href="$url('Product-Show','pid','611714')$">
+                        SHOP NOW
+                    </a>
+                </div>
+                <!-- <img src="https://i1.adis.ws/i/bauer/636968_prodigy_helmet" style="width:100%"> -->
+            </div>
+            <div class="collage-tile shop-link" data-link="$url('Product-Show','pid','691802')$">
+                <img src="https://i1.adis.ws/i/bauer/691802_LS5-carbon-blade" class="shop-collage-image" style="width:100%">
+                <div class="c-product-tile__info">    
+                    <div class="c-product-tile__product-name product-name">
+                        <a class="c-product-tile__product-name-link name-link" href="$url('Product-Show','pid','691802')$" title="Go to Product: VAPOR 1X Skate">
+                        LS5G Goal Runner
+                        </a>
+                    </div>
+                    <div class="c-product-tile__price product-pricing">
+                        <span class="product-sales-price" title="Sale Price">$99.99 - $109.99</span>
+                        <span class="product-sales-price cad-price" title="Sale Price">C $119.99 - C $129.99</span>  
+                    </div>
+                    <a class="c-banners__button c-button c-button--secondary-outline" href="$url('Product-Show','pid','691802')$">
+                        SHOP NOW
+                    </a>
+                </div>
+                <!-- <img src="https://i1.adis.ws/i/bauer/691802_LS5-carbon-blade" style="width:100%"> -->
+            </div>
+            </div>
+            <div class="column wide right mobile-hide">
+            <div class="row" id="shop-order-1">
+                <div class="column inner shop-link" data-link="$url('Product-Show','pid','648720')$">
+                    <div class="collage-tile">
+                        <img src="https://i1.adis.ws/i/bauer/648720_03_1" class="shop-collage-image" style="width:100%">
+                        <div class="c-product-tile__info">    
+                            <div class="c-product-tile__product-name product-name">
+                                <a class="c-product-tile__product-name-link name-link" href="$url('Product-Show','pid','648720')$" title="Go to Product: VAPOR 1X Skate">
+                                VAPOR 1X Stick
+                                </a>
+                            </div>
+                            <div class="c-product-tile__price product-pricing">
+                                <span class="product-sales-price" title="Sale Price">$99.99 - $299.99</span>
+                                <span class="product-sales-price cad-price" title="Sale Price">C $109.99 - C $339.99</span>  
+                            </div>
+                            <a class="c-banners__button c-button c-button--secondary-outline" href="$url('Product-Show','pid','648720')$">
+                                SHOP NOW
+                            </a>
+                        </div>
+                        <!-- <img src="https://i1.adis.ws/i/bauer/648720_03_1" style="width:100%"> -->
+                    </div>
+                </div>
+                <div class="column inner shop-link" data-link="$url('Product-Show','pid','623598')$">
+                    <div class="collage-tile">
+                        <img src="https://i1.adis.ws/i/bauer/623598_1X_skate_macro" class="shop-collage-image" style="width:100%">
+                        <div class="c-product-tile__info">    
+                            <div class="c-product-tile__product-name product-name">
+                                <a class="c-product-tile__product-name-link name-link" href="$url('Product-Show','pid','623598')$" title="Go to Product: VAPOR 1X Skate">
+                                VAPOR 1X Skate
+                                </a>
+                            </div>
+                            <div class="c-product-tile__price product-pricing">
+                                <span class="product-sales-price" title="Sale Price">$179.99 - $949.99</span>
+                                <span class="product-sales-price cad-price" title="Sale Price">C $209.99 - C $999.99</span>  
+                            </div>
+                            <a class="c-banners__button c-button c-button--secondary-outline" href="$url('Product-Show','pid','623598')$">
+                                SHOP NOW
+                            </a>
+                        </div>
+                        <!-- <img src="https://i1.adis.ws/i/bauer/623598_1X_skate_macro" style="width:100%"> -->
+                    </div>
+                </div>
+            </div>
+            <div class="collage-tile shop-link" id="shop-order-1-pre" data-link="$url('Product-Show','pid','627350')$">
+                <img src="https://i1.adis.ws/i/bauer/prodigy-protective-2.0" class="shop-collage-image" style="width:100%">
+                <div class="c-product-tile__info">    
+                    <div class="c-product-tile__product-name product-name">
+                        <a class="c-product-tile__product-name-link name-link" href="$url('Product-Show','pid','627350')$" title="Go to Product: VAPOR 1X Skate">
+                        PRODIGY Youth Top
+                        </a>
+                    </div>
+                    <div class="c-product-tile__price product-pricing">
+                        <span class="product-sales-price" title="Sale Price">$69.99</span> 
+                        <span class="product-sales-price cad-price" title="Sale Price">C $74.99</span> 
+                    </div>
+                    <a class="c-banners__button c-button c-button--secondary-outline" href="$url('Product-Show','pid','627350')$">
+                        SHOP NOW
+                    </a>
+                </div>
+                <!-- <img src="https://i1.adis.ws/i/bauer/prodigy-protective" style="width:100%"> -->
+            </div>
+            </div>
+            <span class="show-less mobile-hide">
+            <img style="transform: rotate(180deg);" src="https://bauer.a.bigcontent.io/v1/static/icon-chevron" alt="more" />
+            <p>SHOW LESS</p>
+            </span>
+        </div>
+    </body>    
+    <script>
+         if($(window).width() < 1020) {
+            try {
+                $('#shop-order-1').insertAfter('#shop-order-2-pre');
+                $('#shop-order-2').insertBefore('#shop-order-1-pre');
+            }catch(e){}
+        }
+        $(window).resize(function() {
+            if($(window).width() < 1020) {
+                try {
+                    $('#shop-order-1').insertAfter('#shop-order-2-pre');
+                    $('#shop-order-2').insertBefore('#shop-order-1-pre');
+                }catch(e){}
+            } else {
+                try {
+                    $('#shop-order-2').insertAfter('#shop-order-2-pre');
+                    $('#shop-order-1').insertBefore('#shop-order-1-pre');
+                }catch(e){}
+            }
+        });
+        $('.row.collage .shop-link').click(function() {
+            window.location.href = $(this).data('link');
+        });
+        function hoverCollageTile() {
+            if($(window).width() > 1020) {
+                $('.row.collage .collage-tile')
+                    .on('mouseover', function(){
+                    $(this).children('.c-product-tile__info').css('display', 'block');
+                    })
+                    .on('mouseout', function(){
+                        $(this).children('.c-product-tile__info').css('display', 'none');
+                    })
+            }else {
+                $('.row.collage .collage-tile')
+                    .on('mouseover', function(){
+                    $(this).children('.c-product-tile__info').css('display', 'block');
+                    })
+                    .on('mouseout', function(){
+                        $(this).children('.c-product-tile__info').css('display', 'block');
+                    })
+            }
+        }
+        hoverCollageTile();
+        $( window ).resize(function() {
+            hoverCollageTile();
+        });
+        $('.collage .show-more').on('click', function() {
+            $('.collage .mobile-hide').slideToggle(1000);
+    
+        });
+        $('.collage .show-less').on('click', function() {
+            $('.collage .mobile-hide').slideToggle(1000);
+    
+        });
+        $('.collage .product-sales-price').css('display', 'block');
+        $('.collage .product-sales-price.cad-price').css('display', 'none'); 
+        var cadPrices = ['/en-CA', '/fr-CA','/fr.'];
+        for( var i=0; i< cadPrices.length ; i++) {
+            if(window.location.href.indexOf(cadPrices[i]) > -1) {
+                $('.collage .product-sales-price').css('display', 'none');
+                $('.collage .product-sales-price.cad-price').css('display', 'block');
+                break;
+            }
+        }
+    </script>

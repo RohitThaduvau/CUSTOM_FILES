@@ -1,0 +1,290 @@
+body {
+	background-color:white;
+	color: #FFF;
+	font-family: "TradeGothicLTStd";
+	font-size: 26px;
+	margin: 0;
+	padding: 0;
+
+}
+.topbar {
+    /* overflow: hidden; */
+    background-color: white;
+    /* position: fixed; Set the navbar to fixed position */
+    /* top: 0; Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    text-align: center;
+    height: 50px;
+    padding: 10px 0 5px 0;
+    border-bottom: 2px solid #c8102e;
+  }
+  
+#middle_container{
+	width: 95%;
+	margin-top: 80px;
+}
+.bottombar{
+    /* overflow: hidden; */
+    background-color: white;
+	/* position: fixed;
+	bottom: 0px; */
+    width: 100%;
+    text-align: center;
+	height: 70px;
+
+	border-top: 2px solid lightgray;
+	/* position: absolute;
+	right: 0;
+	bottom: 0; */
+}
+
+img {
+	max-width: 100%;
+}
+
+h2 {
+	font-family: "TradeGothicLTStd-BdCn20";
+	font-size: 36px;
+	margin-top: 0;
+}
+
+.results {
+	padding-top: 30px;
+	padding-right: 22px;
+	padding-left: 22px;
+	text-align: left;
+}
+
+.img-holder img{
+
+ border: 0px solid lightgrey;
+}
+
+.thumbs img{
+    width: 100px;
+    margin: 0 0 20px;
+    border: 1px solid lightgrey;
+}
+
+.thumbs img:hover{
+
+    border: 1px solid red;
+}
+
+.results_price {
+	/* background-color: #e21743; */
+	font-family: "TradeGothicLTStd-BdCn20";
+	color: #C8102E;	
+	font-size: 48px;
+	text-align: center;
+
+}
+.msrp {
+	font-size: 30px;	
+	letter-spacing: 0.89px;
+}
+
+.long_desc{
+	color: #767676;	
+	font-size: 17px;	
+	line-height: 27px;
+}
+
+.buy_find {
+	background-color: #c8102e;
+	/* flex-basis: 50%; */
+	font-family: "TradeGothicLTStd-BdCn20";
+	width: 109%;
+	/* font-size: 48px; */
+	display: inline-block;
+	color: white;
+	border-radius: 3px;
+	padding: 15px 10px 15px 10px;
+	cursor: pointer;
+}
+.buy_find a{
+	color: #FFFFFF;	
+	font-family: "TradeGothicLTStd-BdCn20";	
+	font-size: 24px;
+}
+
+.buy_find a:hover{
+	color: #FFFFFF;	
+	cursor: pointer;
+}
+
+#find_a_dealer{
+	background-color: #4A4A4A;
+}
+
+.related-product_name {
+	font-family: "VenusRising";
+	font-size: 20px;
+	margin-bottom: 0;
+	color: grey;
+	font-weight: 600;
+	letter-spacing: 1px;
+
+}
+
+hr{
+	background-color:grey; 
+	height: 1px; 
+	border: 0;	
+}
+.related-product_intro{
+	color: #808080;
+}
+
+.centrify{
+    display: flex;
+    align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+.store_box {
+	max-width: 200px;
+	margin-top: 70px;
+	border: 2px solid #d8d8d8;
+	padding: 60px 10px;
+}
+
+.main_img{
+	max-height: 700px;
+}
+
+#mobile_info{
+	display : none;
+}
+
+@media only screen and (max-width: 768px) {
+
+	#mobile_info{
+		display : inline;
+	}
+	#fullscreen_info, .notMobile {
+		display : none;
+
+	}
+	.results__byline{
+		margin-top: 20px;
+	}
+	#buttons_holder{
+		margin-right: 15px;
+	}
+}
+
+.stick_name{
+    color: #c8102e;
+    -ms-flex-order: 1;
+    order: 1;
+    font-family: "VenusRising";
+    font-size: 30px;	
+}
+
+
+.results__byline {
+	color: #333333;	
+	font-size: 30px;	
+	font-family: "TradeGothicLTStd-BdCn20";
+	letter-spacing: 1.5px;	
+	line-height: 30px;
+	font-weight: 300;
+}
+
+.short_desc{
+
+	color: #767676;	
+	font-size: 22px;	
+	font-family: "TradeGothicLTStd-BdCn20";
+	letter-spacing: 0.55px;	
+	text-align: center;
+
+}
+
+.capitalize{
+    text-transform: uppercase;
+}
+
+.gray_wrapper {
+	background-color: #F3F4F5;
+	padding: 10px;
+	width: 104%;
+	cursor: pointer;
+}
+.roboto_18_gray{
+	color: #4A4A4A;	
+	font-family: Roboto;	
+	font-size: 18px;	
+	font-weight: 500;	
+	line-height: 24px;
+}
+
+.related_stick{
+	color: #767676;	
+	font-family: "VenusRising";	
+	font-size: 24px;	
+	line-height: 36px;
+}
+.related_desc{
+	color: #767676;	
+	font-family: Roboto;	
+	font-size: 16px;	
+	font-weight: 300;
+}
+
+.we_found{
+	display: inline-block;
+	color: #333333;	
+	font-size: 36px;
+	font-family: "TradeGothicLTStd-BdCn20";	
+	letter-spacing: 2px;	
+	line-height: 37px;
+	width: 172px;
+	text-align: left;
+
+
+}
+.stores_wrapper{
+	display: none;
+}
+
+.stores_wrapper div{
+	width: 33% !important;
+	float: left;
+}
+
+.stores_wrapper div img{
+	-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+	filter: grayscale(100%);
+	opacity: 0.7;
+
+}
+
+.stores_wrapper div img:hover{
+	-webkit-filter: grayscale(10%); /* Safari 6.0 - 9.0 */
+	filter: grayscale(10%);
+	opacity: 1;
+	cursor: pointer;
+	width: 120%;
+
+}
+
+#chevron:hover, #find_dealer:hover, .main_img:hover{
+	cursor: pointer;
+}
+
+.main_image_holder img{
+	border-bottom: 1px solid lightgrey;
+}
+
+.thumbs_holder img{
+	width: 18%;
+	margin: 0 0 20px;
+	margin-right: 5px;
+	border-bottom: 2px solid lightgrey;
+}
+
+.thumbs_holder img:hover{
+	border-bottom: 3px solid red;
+}

@@ -1,0 +1,75 @@
+
+body {
+    color: blue;
+    color: #000000;	
+    font-family: Roboto;	
+    font-size: 14px;	
+    font-weight: 300;	
+    letter-spacing: 0.32px;	
+    line-height: 19px;
+}
+
+.breads{
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 13px;
+
+}
+
+.sticks {	
+    color: #000000;	
+    font-family: "Akzidenz-Grotesk BQ";	
+    font-size: 60px;	
+    letter-spacing: 1px;
+    font-weight: bold;	
+}
+
+.filter_group {	
+    color: #000000;	
+    font-family: "Akzidenz-Grotesk BQ";	
+    font-size: 20px;	
+    letter-spacing: 0.45px;	
+
+}
+.filter_child {	
+    color: #4A4A4A;	
+    font-family: Roboto;	
+    font-size: 16px;	
+    font-weight: 300;	
+    letter-spacing: 0.4px;	
+    line-height: 21px;
+}
+
+ul{
+    list-style-type: none;
+    list-style: none;
+    padding-left: 0;
+}
+hr{
+    border: 0;
+    height: 1px;
+    /* background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0)); */
+    background: #000000;
+}
+
+.player-sticks-18 {
+	color: #131516;
+	font-family: "Akzidenz-Grotesk BQ";
+	font-size: 36px;
+	letter-spacing: 0.72px;
+}
+
+@media screen and (max-width: 768px) {
+    .player-sticks-18 {
+
+        font-size: 18px;
+
+    }
+}
+/* .view-box {
+	height: 54px;
+	width: 170px;
+    border: 1px solid #000000;
+    font-weight: bold;
+	border-radius: 2px;
+} */

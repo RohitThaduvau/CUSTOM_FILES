@@ -1,0 +1,251 @@
+
+// Results
+
+.results {
+  padding-top: 30px;
+  padding-right: 22px;
+  padding-left: 22px;
+  text-align: left;
+
+  @include pxl-media($md-view-up) {
+    display: block;
+    flex-direction: row;
+    max-width: 1280px;
+    padding-top: 50px;
+    padding-bottom: 106px;
+  }
+
+  @include pxl-media($lg-view-up) {
+    padding-right: 100px;
+  }
+
+  .content-inner {
+    display: flex;
+    flex-direction: column;
+
+    @include pxl-media($md-view-up) {
+      display: block;
+    }
+
+    & div:first-of-type {
+      order: 2;
+    }
+  }
+
+  // Carousel
+
+  &__carousel {
+    order: 2;
+
+    @include pxl-media($md-view-up) {
+      float: left;
+      margin-right: 30px;
+      order: initial;
+    }
+
+    @include pxl-media($lg-view-up) {
+      margin-right: 113px;
+    }
+
+    .VueCarousel-slide {
+      text-align: center;
+    }
+
+    .VueCarousel-dot.VueCarousel-dot--active .VueCarousel-dot-inner {
+      background-color: $white !important;
+      border: 1px solid $primary-accent-color;
+    }
+
+    &__feature-image {
+      @include pxl-media($md-view-up) {
+        border: 1px solid $quaternary-color;
+        float: left;
+        width: 467px;
+      }
+      @include pxl-media($lg-view-up) {
+        width: auto;
+      }
+    }
+
+    &__images__thumbs {
+      float: left;
+      list-style: none;
+      margin: 0 26px 0 0;
+      padding: 0;
+
+      li {
+        margin-bottom: 29px;
+      }
+
+      img {
+        border: 1px solid $quaternary-color;
+        display: block;
+        height: auto;
+        width: 75px;
+
+        &.selected {
+          border-color: $primary-accent-color;
+        }
+      }
+    }
+  }
+
+  // Product Info
+
+  &__product-name {
+    color: $primary-accent-color;
+    order: 1;
+    font-family: $font-family-tertiary;
+    font-size: 36px;
+    margin-bottom: 8px;
+
+    @include pxl-media($md-view-up) {
+      font-size: 40px;
+      margin-bottom: 0;
+    }
+
+    @include pxl-media($lg-view-up) {
+      font-size: 50px;
+      margin-top: 50px;
+    }
+  }
+
+  &__byline {
+    color: $primary-color;
+    display: block;
+    font-family: $font-family-primary;
+    font-size: 20px;
+    font-weight: normal;
+    margin-top: 5px;
+  }
+
+  &__product-description {
+    color: $secondary-color;
+    font-size: 16px;
+    line-height: 1.38;
+    order: 3;
+
+    @include pxl-media($md-view-up) {
+      display: flex;
+      flex-direction: column;
+      line-height: 22px;
+    }
+
+    &__intro {
+      color: $primary-color;
+      display: block;
+      font-family: $font-family-primary;
+      font-size: 20px;
+      margin-bottom: 0;
+    }
+  }
+
+  // Purchase Options
+
+  &__purchase-options {
+    color: $white;
+    display: flex;
+    font-size: 30px;
+    margin-left: -22px;
+    margin-right: -22px;
+    order: 5;
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+
+    &.is-sticky {
+      bottom: 0;
+      position: fixed;
+      width: 100%;
+      z-index: 100;
+
+      @include pxl-media($sm-view-up) {
+        position: initial;
+        width: auto;
+      }
+    }
+
+    @include pxl-media($md-view-up) {
+      display: flex;
+      margin-bottom: 35px;
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    @include pxl-media($lg-view-up) {
+      margin-top: 35px;
+    }
+
+    &__price {
+      background-color: $secondary-accent-color;
+      flex-basis: 50%;
+      font-family: $font-family-secondary;
+      padding: 14px 17px 10px;
+      text-align: center;
+
+      @include pxl-media($md-view-up) {
+        flex-basis: 173px;
+      }
+
+      &__label {
+        font-family: $font-family-primary;
+        font-size: 20px;
+        margin-left: 8px;
+      }
+    }
+
+    &__link {
+      background-color: $primary-accent-color;
+      flex-basis: 50%;
+      font-family: $font-family-secondary;
+      text-align: center;
+
+      @include pxl-media($md-view-up) {
+        flex-basis: 173px;
+      }
+
+      a {
+        color: $white;
+        display: block;
+        font-size: 30px;
+        text-decoration: none;
+        padding: 14px 0 10px;
+      }
+    }
+  }
+
+  // Related Product Info
+
+  &__related-product {
+    order: 4;
+
+    @include pxl-media($md-view-up) {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__intro {
+      border-top: 2px solid $primary-accent-color;
+      border-bottom: 2px solid $primary-accent-color;
+      font-size: 20px;
+      padding: 6px 0 1px;
+      text-align: center;
+    }
+
+    &__name {
+      font-family: $font-family-tertiary;
+      font-size: 20px;
+      margin-bottom: 0;
+    }
+
+    &__description {
+      font-size: 20px;
+
+      @include pxl-media($md-view-up) {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+
+

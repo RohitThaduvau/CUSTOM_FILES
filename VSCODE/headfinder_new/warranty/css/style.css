@@ -1,0 +1,476 @@
+@font-face {
+    font-family: "Akzidenz-Grotesk BQ";
+    src: url("../assets/fonts/Akzidenz_Grotesk_Pro_Cnd_Regular.otf") format("opentype");
+}
+@font-face {
+    font-family: "Akzidenz-Grotesk BQ";
+    src: url("../assets/fonts/Akzidenz_Grotesk_Pro_Bold_Cnd_Regular.otf") format("opentype");
+    font-weight: bold;
+}
+@font-face {
+    font-family: "Akzidenz-Grotesk BQ";
+    src: url("../assets/fonts/Akzidenz_Grotesk_Pro_Bold_Cnd_Italic.otf") format("opentype");
+    font-weight: bold;
+    font-style: italic, oblique;
+}
+
+/* LIGHT*/
+@font-face {
+    font-family: "Akzidenz-Grotesk BQ Light";
+    src: url("../assets/fonts/Akzidenz_Grotesk_Pro_Light_Cnd_Regular.otf") format("opentype");
+}
+
+body, html{
+    overflow-x: hidden; 
+}
+.verytopbar {
+    overflow: hidden;
+    background-color: white;
+    width: 100%; /* Full width */
+    text-align: right;
+    height: 25px;
+    padding: 0px;;
+    border-bottom: 1px solid lightgrey;
+
+}
+.verytopbar span, .topbar span,{
+    display: inline-block;
+    /* float: left; */
+}
+.verytopbar a{
+    color: #9B9B9B;	
+    font-family: "Akzidenz-Grotesk BQ Light";	
+    font-size: 14px;	
+    line-height: 17px;
+    letter-spacing: 1px;
+    /* text-align: center; */
+}
+
+.topbar {
+    overflow: hidden;
+    background-color: white;
+    width: 100%; /* Full width */
+    text-align: left;
+    height: 70px;
+    vertical-align:bottom;
+    position: relative;
+}
+.topbar div {
+    /* vertical-align:bottom; */
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 0px;
+}
+
+#topright {
+    right: 0;
+    vertical-align: bottom;
+}
+
+#topright span {
+    margin-left: 10px;
+}
+
+#topright a, li a {
+	
+    color: #000000;	
+    font-family: "Akzidenz-Grotesk BQ";	
+    font-size: 17px;	
+    letter-spacing: 0.74px;	
+    /* line-height: 19px;	 */
+    text-align: center;
+    text-transform: uppercase;
+    display: inline-block;
+    padding-right: 20px;
+    vertical-align: bottom;
+    bottom: 0px;
+}
+
+#topright span{
+    display: table-cell;
+    vertical-align: bottom;
+}
+#top-links {
+    margin-bottom: -10px;
+    padding-bottom: -10px;
+    vertical-align: bottom;
+}
+
+.alignleft {
+	float: left;
+}
+.alignright {
+	float: right;
+}
+/* Video wrapper*/
+
+.video-wrapper {
+    position: relative;
+    background: black;
+    text-align: left;
+    color: #FFFFFF;	
+    font-family: "Akzidenz-Grotesk BQ";	
+    font-size: 90px;	
+    font-weight: bold;
+    font-style: italic;
+    line-height: 84px;
+}
+video 
+{
+    min-width: 100% !important;
+    width: 105% !important;
+    height: auto !important;
+    object-fit: full;
+    margin-left: -20px;
+    margin-right: -10px;
+}
+
+
+/* TEXT TEXT*/
+#the_game_just{
+    position: absolute;
+    top: 611px;
+    left: 25px;
+
+    height: 181px;	
+    width: 542px;	
+    color: #FFFFFF;	
+    font-family: "Akzidenz-Grotesk BQ";	
+    font-size: 90px;
+    font-weight: bold;	
+    font-style: italic, oblique;	
+    line-height: 84px;
+    z-index: 10;
+}
+
+#faster_slapshots{
+    position: absolute;
+    top: 800px;
+    left: 25px;
+
+    height: 50px;	
+    width: 829px;	
+    color: #FFFFFF;	
+    font-family: "Akzidenz-Grotesk BQ";	
+    font-size: 34px;	
+    letter-spacing: 0.5px;	
+    line-height: 40px;
+    z-index: 11;
+}
+
+.centrify{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.capitalize{
+    text-transform: uppercase;
+}
+
+#explore_box {
+    position: absolute;
+    top: 860px;
+    left: 25px;
+
+    height: 70px;	
+    width: 199px;	
+    border: 1px solid #FFFFFF;	
+    border-radius: 2px;
+    /*text*/
+    color: #FFFFFF;	
+    font-family: "Akzidenz-Grotesk BQ";	
+    font-size: 21px;	
+    letter-spacing: 0.58px;	
+    line-height: 30px;	
+    text-align: center;
+}
+
+#shop_now_box {	
+    position: absolute;
+    top: 860px;
+    left: 270px;
+
+    height: 70px;	
+    width: 199px;	
+    border: 1px solid #FFFFFF;	
+    border-radius: 2px;	
+    background-color: #FFFFFF;
+/*text*/
+    color: #131516;	
+    font-family: "Akzidenz-Grotesk BQ";	
+    font-size: 21px;	
+    letter-spacing: 0.58px;
+
+    line-height: 30px;	
+    text-align: center;
+
+}
+
+#shop_by_category {	
+    height: 181px;	
+    color: #131516;	
+    font-family: "Akzidenz-Grotesk BQ";	
+    font-size: 50px;	
+    font-style: italic;	
+    font-weight: bold;
+    line-height: 84px;	
+    text-align: center;
+}
+
+#keep_your_head, #the_women_movement {	
+    /* height: 73px;	
+    width: 557px;	 */
+    color: #131516;	
+    font-family: "Akzidenz-Grotesk BQ";	
+    font-size: 50px;	
+    font-style: italic;
+    font-weight: bold;	
+    line-height: 84px;	
+    text-align: center;
+}
+#neuroshield, #on_the_ice {	
+    color: #000000;	
+    font-family: "Akzidenz-Grotesk BQ";	
+    font-size: 28px;	
+    letter-spacing: 0.58px;	
+    line-height: 35px;	
+    text-align: center;
+}
+
+#skate-black-bg {
+    position: relative;
+    background: black url("../assets/images/skate.jpg") no-repeat right 0px;
+    height: 957px;
+}
+#discover_a_game{
+    position: absolute;
+    top: 400px;
+
+    color: #FFFFFF;	
+    font-family: "Akzidenz-Grotesk BQ";	
+    font-size: 90px;
+    font-weight: bold;	
+    font-style: italic;	
+    line-height: 84px;
+}
+#welcome_to_the_next {	
+    position: absolute;
+    top: 600px;
+
+    width: 618px;	
+    color: #FFFFFF;	
+    font-family: "Akzidenz-Grotesk BQ";	
+    font-size: 34px;	
+    letter-spacing: 0.5px;	
+    line-height: 40px;
+}
+#step_into_skate {
+    position: absolute;
+    top: 780px;
+    
+    height: 28px;	
+    width: 283px;	
+    color: #FFFFFF;	
+    font-family: "Akzidenz-Grotesk BQ";	
+    font-size: 21px;	
+    letter-spacing: 0.5px;	
+    line-height: 30px;	
+    text-align: center;
+
+    height: 70px;	
+    width: 285px;	
+    border: 1px solid #FFFFFF;	
+    border-radius: 2px;
+}
+
+/* another block */
+
+#skates-blue-bg{
+    position: relative;
+    background:#009cd9 url("../assets/images/skates.jpg") no-repeat right 0px;
+    height: 960px;
+}
+#build_your_own {	
+    position: absolute;
+    top: 315px;
+
+    width: 576px;	
+    color: #FFFFFF;	
+    font-family: "Akzidenz-Grotesk BQ";	
+    font-size: 90px;	
+    font-weight: bold;
+    font-style: italic;	
+    line-height: 84px;
+}
+/*  */
+#every_player_is {
+    position: absolute;
+    top: 426px;
+    
+    width: 575px;	
+    color: #FFFFFF;	
+    font-family: "Akzidenz-Grotesk BQ";	
+    font-size: 34px;	
+    line-height: 40px;
+}
+
+#products_trending_now, #shop_the_look {	
+
+    color: #131516;	
+    font-family: "Akzidenz-Grotesk BQ";	
+    font-size: 60px;	
+    font-style: italic;	
+    line-height: 84px;	
+    text-align: center;
+    font-weight: bold;
+}
+
+#show_more {	
+    height: 69px;	
+    width: 199px;	
+    border: 1px solid #131516;	
+    border-radius: 2px;
+    font-family: "Akzidenz-Grotesk BQ";
+    font-size: 21px;	
+    letter-spacing: 0.58px;	
+    line-height: 30px;	
+    text-align: center;
+}
+
+/* another block */
+
+#ppl-bg{
+    background:white url("../assets/images/ppl.jpg") no-repeat right 0px;
+    height: 960px;
+    position: relative;
+}
+
+#the_best_players_in {
+    position: absolute;
+    top: 345px;
+    
+    width: 575px;	
+    color: #131516;	
+    font-family: "Akzidenz-Grotesk BQ";	
+    font-size: 40px;	
+    font-style: italic;	
+    letter-spacing: 0.59px;	
+    line-height: 40px;
+    font-weight:bold;
+}
+
+#wear_bauer {
+    position: absolute;
+    top: 400px; 
+    
+	width: 427px;
+	color: #131516;
+	font-family: "Akzidenz-Grotesk BQ";
+	font-size: 90px;
+	font-style: italic;
+    line-height: 84px;
+    font-weight:bold;
+}
+
+#explore_the_equipmen {
+    position: absolute;
+    top: 650px;
+
+	width: 549px;
+	color: #131516;
+	font-family: "Akzidenz-Grotesk BQ";
+	font-size: 34px;
+	line-height: 40px;
+}
+
+#whats_in_the_bag {	
+    position: absolute;
+    top: 700px;
+
+    height: 70px;	
+    width: 282px;	
+    border: 1px solid #131516;	
+    border-radius: 2px;
+    
+    color: #131516;	
+    font-family: "Akzidenz-Grotesk BQ";	
+    font-size: 21px;	
+    letter-spacing: 0.5px;	
+    line-height: 30px;	
+    text-align: center;
+}
+
+.price-cad {	
+    color: #131516;	
+    font-family: "Akzidenz-Grotesk BQ";	
+    font-size: 32px;	
+    line-height: 29px;
+    font-weight: bold;
+}
+#get_exclusive_news {
+	width: 1930px;
+	color: #000000;
+	font-family: "Akzidenz-Grotesk BQ";
+	font-size: 34px;
+	font-style: italic;
+	letter-spacing: 0.42px;
+	line-height: 30px;
+    text-align: center;
+    font-weight: bold;
+}
+
+#search_field {	
+
+    background-color: #FFFFFF;
+    padding: 10px;
+    width: 400px;
+    margin-right: 100px; 
+}
+
+#sign_up_button {	
+    height: 50px;	
+    width: 169px;	
+    border-radius: 2px;	
+    background-color: #000000;
+    color: #FFFFFF;	
+    font-family: "Akzidenz-Grotesk BQ";	
+    font-size: 21px;	
+    line-height: 30px;	
+    text-align: center;
+}
+
+#bottom_menu span{
+    display: inline-block;
+    height: 30px;	
+    width: 208px;	
+    color: #000000;	
+    font-family: "Akzidenz-Grotesk BQ";	
+    font-size: 18px;	
+    letter-spacing: 0.5px;	
+    line-height: 30px;	
+    text-align: center;
+}
+#bauer_hockey_inc {
+	color: #424242;
+	font-family: Roboto;
+	font-size: 13px;
+	font-weight: 300;
+	line-height: 30px;
+}
+.nine_nine {		
+    color: #131516;	
+    font-family: "Akzidenz-Grotesk BQ";	
+    font-size: 16px;	
+    line-height: 29px;
+    padding: 0 0 15px 5px;
+}
+
+.new {
+	height: 21px;
+	width: 30px;
+	color: #FFFFFF;
+	font-family: "Akzidenz-Grotesk BQ";
+	font-size: 18px;
+	line-height: 21px;
+}
+

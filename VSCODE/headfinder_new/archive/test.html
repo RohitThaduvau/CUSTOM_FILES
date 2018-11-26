@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+    <head>
+    </head>
+    <body>
+
+    <div id="holder">
+        TEST PAGE
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script>
+        
+        var sticks = [];
+
+        sticks['havok'] = 3;
+
+        sticks['tank'] = 1;
+
+        sticks['optik'] = 4;
+
+        sticks['setntik'] = 8;
+
+        var str = '';
+       
+        //console.log(sticks);
+        
+        var temp = []; 
+        for(var index in sticks) {
+            //console.log( index + " : " + sticks[index]);
+
+            str += index + " : " + sticks[index] + "</br>";
+
+            temp[sticks[index]] = index;
+        }
+        
+        temp = temp.reverse() 
+        console.log(temp);
+        var i=1;
+        var primary = '';
+        var secondary = '';
+
+        for(var t in temp){
+            if(i == 2){
+                secondary = temp[t];
+                break;
+            }
+            if(i == 1){
+                primary = temp[t];
+                i++;
+            }
+
+        }
+        console.log("primary:" + primary);
+        console.log("secondary:" + secondary);
+
+       $("#holder").html("<h1>" + str + "</h1>");
+
+    </script>
+    
+    </body>
+</html>

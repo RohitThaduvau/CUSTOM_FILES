@@ -1167,11 +1167,21 @@ img.ruler-icon {
 	padding-right: 0;
 }
 .c-product-details__quantity-add-to-cart #add-to-cart {
-	margin: 0 10px;
+	margin: 0 0 0 10px;
 }
 .push-nav-right #add-to-cart-notification {
 	margin: 0 15px;
 }
+/* .c-product-details__quantity-add-to-cart {
+	background: transparent;
+	padding: 0;
+	position: relative;
+} */
+.c-product-details__quantity-add-to-cart #push-nav-find-store {
+	margin-left: 10px;
+	padding: 0;
+}
+
 /* store - finder */
 #map-finder {
 	margin-bottom: -81px;
@@ -1344,9 +1354,9 @@ img.ruler-icon {
 
 @media screen and (max-width: 1024px) { /*desktop menu breakpoint*/
 
-	.c-storelocator__button {
+	/* .c-storelocator__button {
 		margin-bottom: 20px;
-	}
+	} */
 
 }
 

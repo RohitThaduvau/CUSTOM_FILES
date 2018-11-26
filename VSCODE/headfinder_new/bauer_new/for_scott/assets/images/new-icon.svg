@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="52px" height="52px" viewBox="0 0 52 52" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50 (54983) - http://www.bohemiancoding.com/sketch -->
+    <title>new-icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="new-icon" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <circle id="Oval-4" fill="#131516" cx="26" cy="26" r="26"></circle>
+        <text id="NEW" font-family="AkzidenzGroteskBQ-BdCnd, Akzidenz-Grotesk BQ" font-size="16" font-style="condensed" font-weight="bold" fill="#FFFFFF">
+            <tspan x="13" y="33">NEW</tspan>
+        </text>
+    </g>
+</svg>

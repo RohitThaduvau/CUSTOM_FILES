@@ -1,0 +1,23 @@
+.find__head__desktop {
+    display: none;
+    padding: 0;
+}
+.find__head__mobile {
+    display: block;
+    padding: 0;
+}
+.find__head__block {
+    margin-top: -150px;
+}
+.find__head__block__mobile {
+    margin-top: -285px;
+}
+
+@media (min-width: 850px) {
+    .find__head__desktop {
+        display: block;  
+    }   
+    .find__head__mobile {
+        display: none;
+    }
+}

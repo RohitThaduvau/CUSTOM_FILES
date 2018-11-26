@@ -1,0 +1,134 @@
+<style>
+        .message-banner__item__link {
+            display: flex;
+            min-height: 75px;
+            z-index: 2;
+        }
+        .message-banner__item-1 {
+            display: flex;
+            align-items: center;
+            flex: 1;
+            background: url(http://i1.adis.ws/i/bauer/magalog-banner-image);
+            height: 75px;
+            margin: 0;
+            background-position: 50%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            -webkit-transition: -webkit-transform 0.3s ease;
+            transition: -webkit-transform 0.3s ease;
+            transition: transform 0.3s ease;
+            transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+        }
+        .message-banner__item-2 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex: 1;
+            background: url(http://bauer.a.bigcontent.io/v1/static/blue_strip);
+            height: 75px;
+            margin: 0;
+            background-position: 50%;
+            background-repeat: repeat-x;
+            background-size: cover;
+            -webkit-transition: -webkit-transform 0.3s ease;
+            transition: -webkit-transform 0.3s ease;
+            transition: transform 0.3s ease;
+            transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+        }
+        .message-banner__item-2:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 50%;
+            border-bottom: 75px solid #009cda;
+            border-left: 75px solid transparent;
+            width: 0;
+        }
+        .message-banner__item__heading h2 {
+            color: #fff;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            font-family: akzidenz-grotesk-pro-condens;
+            font-size: 2rem;
+            text-align: center;
+            padding: 0 1rem 0 4rem;
+            margin: 0;
+        }
+        .message-banner__item__sub-container-item-1 span {
+            color: #fff;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            font-family: akzidenz-grotesk-pro-condens;
+            font-size: 1.0rem;
+        }
+        .message-banner__item__sub-container-item-1 img{
+            width: 13px;
+            vertical-align: middle;
+            margin-top: -4px;
+        }
+        .message-banner__item__sub-container-item h2 {
+            display: none;
+        }
+        @media only screen and (min-width: 70em) {
+            .message-banner__item__sub-container-item-1 span {
+                font-size: 1.5rem;
+            }
+            .message-banner__item__sub-container-item-1 img{
+                width: 15px;
+                vertical-align: middle;
+                margin-top: -8px;
+            }
+        }
+        @media only screen and (max-width: 63.75em) {
+            .message-banner__item-1 {
+                display: none;
+            }
+            .message-banner__item-2 {
+               width: 100%;
+            }
+            .message-banner__item__sub-container-item h2 {
+                display: block;
+                padding: 0 1rem;
+            }
+            .message-banner__item-2:before {
+                display: none;
+            }
+        }
+        @media only screen and (max-width: 35em) {
+            .message-banner__item__sub-container-item-1 span {
+                letter-spacing: 2px;
+                font-size: .75rem;
+            }  
+            .message-banner__item__sub-container-item-1 img{
+                width: 10px;
+                vertical-align: middle;
+                margin-top: -2px;
+            }
+        }
+        @media screen and (max-width: 576px) {
+            #asset-f602c7cda155-40dd-8bd9-47dcbce2df08 video[poster] {
+                object-position: right;
+            }
+        }
+    </style>
+    
+    <section class="message-banner__container">
+        <a href="/en-US/thegameisagift.html" class="message-banner__item__link">
+            <div id="top-banner-1" class="message-banner__item-container message-banner__item-1">
+                <div class="message-banner__item__heading">
+                    <h2>the game is a gift</h2>
+                </div>
+            </div>
+            <div id="top-banner-2" class="message-banner__item-container message-banner__item-2">
+                <div class="message-banner__item__sub-container">
+                    <div class="message-banner__item__heading message-banner__item__sub-container-item">
+                        <h2>the game is a gift</h2>
+                        <div class="message-banner__item__sub-container-item-1">
+                            <span>holiday 2018 | a guide to holiday gift giving</span>
+                            <img src="http://bauer.a.bigcontent.io/v1/static/chevron-magalog" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>        
+    </section>

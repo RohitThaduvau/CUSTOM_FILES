@@ -1,0 +1,181 @@
+// Variables
+
+$font-family-primary: 'TradeGothicLTStd';
+$font-family-secondary: 'TradeGothicLTStd-BdCn20';
+$font-family-tertiary: 'VenusRising';
+
+$primary-color: #201d1d;
+$secondary-color: #808080;
+$tertiary-color: #CCC;
+$quaternary-color: #D8D8D8;
+
+$primary-accent-color: #c8102e;
+$secondary-accent-color: #e21743;
+
+$white: #FFF;
+$black: #000;
+
+
+// Media Queries
+
+$grid-columns: 12;
+$default-feature: min-width;
+
+/// Small responsive breakpoint viewport size in pixels
+$sm-px: 376px !default;
+
+/// Medium responsive breakpoint viewport size in pixels
+$md-px: 1024px !default;
+
+/// Large responsive breakpoint viewport size in pixels
+$lg-px: 1240px !default;
+
+
+// =================================================================================================
+// Mobile First Queries
+// =================================================================================================
+
+/// (Mobile First) Small-Up responsive breakpoint
+$sm-view-up: min-width ($sm-px) !default;
+
+/// (Mobile First) Medium-Up responsive breakpoint
+$md-view-up: min-width ($md-px) !default;
+
+/// (Mobile First) Large-Up responsive breakpoint
+$lg-view-up: min-width ($lg-px) !default;
+
+
+// Mixins
+
+@mixin pxl-media($query: $feature $value $columns, $total-columns: $grid-columns) {
+
+      @if length($query) == 1 {
+
+          @media screen and ($default-feature: nth($query, 1)) {
+              $default-grid-columns: $grid-columns;
+              $grid-columns: $total-columns !global;
+              @content;
+              $grid-columns: $default-grid-columns !global;
+          }
+
+      } @else {
+          $loop-to: length($query);
+          $media-query: "screen and ";
+          $default-grid-columns: $grid-columns;
+          $grid-columns: $total-columns !global;
+
+          @if not(is-even(length($query))) {
+              $grid-columns: nth($query, $loop-to) !global;
+              $loop-to: $loop-to - 1;
+          }
+
+          $i: 1;
+
+          @while $i <= $loop-to {
+              $media-query: $media-query + "(" + nth($query, $i) + ": " + nth($query, $i + 1) + ") ";
+
+              @if ($i + 1) != $loop-to {
+                  $media-query: $media-query + "and ";
+              }
+
+              $i: $i + 2;
+          }
+
+          @media #{$media-query} {
+              @content;
+              $grid-columns: $default-grid-columns !global;
+          }
+
+      }
+
+  }
+
+@mixin pxl-clearfix() {
+
+      &::after {
+          content: "" !important;
+          display: block !important;
+          clear: both !important;
+      }
+
+  }
+
+@mixin pxl-hide-text() {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+
+// Base Styles
+
+
+body {
+  background-color: $primary-color;
+  color: $white;
+  font-family: $font-family-primary;
+  font-size: 26px;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+// Headings
+
+h2 {
+  font-family: $font-family-secondary;
+  font-size: 36px;
+  margin-top: 0;
+
+  @include pxl-media($md-view-up) {
+    font-size: 60px;
+  }
+}
+
+// Links
+
+a, a:link {
+  color: $tertiary-color;
+  font-size: 20px;
+  text-decoration: none;
+
+  &.return-link {
+    border-bottom: 1px solid $tertiary-color;
+    display: inline-block;
+    margin-top: 30px;
+    padding-bottom: 3px;
+  }
+}
+
+// Buttons
+
+.btn, .btn:link {
+    background-color: $primary-accent-color;
+    color: $white;
+    display: inline-block;
+    font-family: $font-family-secondary;
+    font-size: 24px;
+    min-width: 332px;
+    padding: 25px 21px 18px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.btn--start {
+  align-self: flex-end;
+  margin: auto auto 0 auto;
+}
+
+
+
+
+
+

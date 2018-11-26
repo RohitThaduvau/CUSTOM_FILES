@@ -1,0 +1,183 @@
+#faster_than_fast {
+    position: absolute;
+    top: 750px;
+    left: 25px;
+    height: 276px;	
+    width: 417px;	
+    color: #FFFFFF;	
+    font-family: "Akzidenz-Grotesk BQ";	
+    font-size: 90px;	
+    font-style: italic;	
+    letter-spacing: 2px;	
+    line-height: 84px;
+    font-weight: bold;
+    z-index: 10;
+}
+@media only screen and (max-width: 1024px) {
+    #faster_than_fast {
+        top: 250px; 
+    }
+}
+
+#scroll-down {
+    position: absolute;
+    top: 1000px;
+    left: 25px;
+
+	color: #FFFFFF;
+	font-family: Roboto;
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 34px;
+}
+
+#skates-player-skat {	
+	
+    color: #000000;	
+    font-family: Roboto;	
+    font-size: 13px;	
+    font-weight: 300;	
+    line-height: 13px;
+}
+
+#x-skate {		
+    color: #131516;	
+    font-family: "Akzidenz-Grotesk BQ";	
+    font-size: 50px;	
+    letter-spacing: 1px;	
+    line-height: 64px;
+
+}
+#nine-cad{
+
+    color: #131516;
+    font-family: "Akzidenz-Grotesk BQ";
+    font-size: 40px;
+    letter-spacing: 0.72px;
+
+}
+
+#there-s-straight-ahe {
+    height: 221px;	
+    width: 95%;	
+    color: #131516;	
+    font-family: Roboto;	
+    font-size: 21px;	
+    font-weight: 300;	
+    letter-spacing: 0.38px;	
+    line-height: 30px;
+}
+
+.customize {	
+	
+    color: #000000;	
+    font-family: "Akzidenz-Grotesk BQ";	
+    font-size: 18px;	
+    letter-spacing: 0.2px;	
+    line-height: 20px;	
+    text-align: center;
+}
+
+#accerate_your_game {
+    position: relative;
+    background: black url("../assets/images/prod/ice_skates.jpg") no-repeat right 0px;
+    height: 900px;
+}
+
+#accerate_your_game_text{
+    position: absolute;
+    right: 180px;
+    top: 305px;
+
+    width: 600px;	
+    color: #FFFFFF;	
+    font-family: "Akzidenz-Grotesk BQ";	
+    font-size: 90px;	
+    font-style: italic;	
+    font-weight: bold;
+    letter-spacing: 2px;	
+    line-height: 84px;
+
+}
+
+#performance-and-qual {
+    position: absolute;
+    right: 164px;
+    top: 495px;
+    
+    height: 209px;
+    width: 618px;	
+    color: #FFFFFF;	
+    font-family: "Akzidenz-Grotesk BQ";	
+    font-size: 34px;	
+    letter-spacing: 0.5px;	
+    line-height: 40px;
+}
+
+#more-contact-more-s {	
+    color: #131516;	
+    font-family: "Akzidenz-Grotesk BQ";	
+    font-size: 90px;	
+    font-style: italic;	
+    letter-spacing: 1px;	
+    line-height: 84px;
+}
+
+#get-unprecedented-fi {	
+    height: 175px;	
+    width: 444px;	
+    color: #131516;	
+    font-family: "Akzidenz-Grotesk BQ";	
+    font-size: 34px;	
+    letter-spacing: 0.5px;	
+    line-height: 35px;
+}
+
+.flex-lock-pro-tongue {	
+
+    color: #131516;	
+    font-family: Roboto;	
+    font-size: 16px;	
+    font-weight: 300;	
+    line-height: 21px;
+}
+.play-with-an-edge {	
+    height: 67px;	
+    width: 585px;	
+    color: #131516;	
+    font-family: "Akzidenz-Grotesk BQ";	
+    font-size: 50px;	
+    font-style: italic;	line-height: 85px;
+}
+
+.our-patented-lightsp {
+	color: #000000;
+	font-family: "Akzidenz-Grotesk BQ";
+	font-size: 18px;
+	line-height: 20px;
+}
+
+.search-field {	
+    height: 49px;	
+    width: 273px;	
+    border-radius: 2px;	
+    background-color: rgba(142,142,147,0.12);
+}
+
+/* @import url("//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css"); */
+.search { position: relative; }
+.search input { text-indent: 30px;}
+.search .fa-search { 
+  position: absolute;
+  top: 12px;
+  left: 7px;
+  font-size: 15px;
+}
+
+.nav-item a{
+    display: inline-block;
+}
+
+.nav-item {
+    text-align: left;
+}

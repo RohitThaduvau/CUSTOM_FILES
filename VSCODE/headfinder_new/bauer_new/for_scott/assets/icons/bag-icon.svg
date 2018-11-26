@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="43px" height="30px" viewBox="0 0 43 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50 (54983) - http://www.bohemiancoding.com/sketch -->
+    <title>bag-icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="bag-icon" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-3" stroke="#231F20" stroke-width="0.5">
+            <g id="Page-1">
+                <path d="M39.7128674,29.3347846 L2.90583371,29.3347846 C1.57331685,29.3347846 0.483339326,28.1735538 0.483339326,26.7543231 L1.93277753,13.4343231 C1.93277753,12.0150923 3.02275506,10.8543231 4.35527191,10.8543231 L38.2634292,10.8543231 C39.5959461,10.8543231 40.6859236,12.0150923 40.6859236,13.4343231 L42.1353618,26.7543231 C42.1353618,28.1735538 41.0453843,29.3347846 39.7128674,29.3347846 Z" id="Stroke-1"></path>
+                <path d="M10.4837382,10.8029077 C10.4837382,5.09136923 15.3306596,0.461676923 21.309109,0.461676923 C27.2880416,0.461676923 32.1349629,5.09136923 32.1349629,10.8029077" id="Stroke-3"></path>
+                <path d="M10.4837382,29.3347846 L10.4837382,10.8030923" id="Stroke-5"></path>
+                <path d="M32.1349629,29.3347846 L32.1349629,10.8030923" id="Stroke-7"></path>
+            </g>
+        </g>
+    </g>
+</svg>

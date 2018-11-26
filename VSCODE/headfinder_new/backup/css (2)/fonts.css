@@ -1,0 +1,28 @@
+@font-face {
+    font-family: 'TradeGothicLTStd';
+    src:url('../assets/fonts/tradegothicltstd.otf');
+    src:url('../assets/fonts/tradegothicltstd.eot');
+    src:url('../assets/fonts/tradegothicltstd.ttf')  format('truetype'), /* Safari, Android, iOS */
+        url('../assets/fonts/tradegothicltstd.woff') format('woff'), /* Modern Browsers */
+        url('../assets/fonts/tradegothicltstd.svg#svgFontName') format('svg'), /* Legacy iOS */
+        url('../assets/fonts/tradegothicltstd.woff2');
+        font-weight: normal;
+        font-style: normal;
+  }
+  @font-face {
+    font-family: 'TradeGothicLTStd-BdCn20';
+    src:url('../assets/fonts/tradegothicltstd-bdcn20.otf');
+    src:url('../assets/fonts/tradegothicltstd-bdcn20.eot');
+    src:url('../assets/fonts/tradegothicltstd-bdcn20.ttf')  format('truetype'), /* Safari, Android, iOS */
+        url('../assets/fonts/tradegothicltstd-bdcn20.woff') format('woff'), /* Modern Browsers */
+        url('../assets/fonts/tradegothicltstd-bdcn20.svg#svgFontName') format('svg'), /* Legacy iOS */
+        url('../assets/fonts/tradegothicltstd-bdcn20.woff2');
+        font-weight: normal;
+        font-style: normal;
+  }
+  
+  @font-face {
+      font-family: 'VenusRising';
+      src: url('../assets/fonts/venus-rising-rg.ttf') format('truetype');
+  }
+  
